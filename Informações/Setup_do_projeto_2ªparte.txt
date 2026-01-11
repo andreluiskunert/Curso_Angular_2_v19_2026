@@ -1,0 +1,464 @@
+Olá pessoal, Bem vindos a mais uma aula do nosso treinamento de ano.
+
+Então nessa aula pessoal nós vamos aprender como que a gente monta o nosso ambiente aqui né?
+
+Para a gente dar início às nossas aulas e colocar a mão na massa o mais rápido possível, Então vamos
+
+lá.
+
+Então, o primeiro recurso que a gente precisa, que é antes de instalar aqui o nosso, se é lido angular,
+
+a gente vai precisar instalar o node JS.
+
+Então, no jazz, basicamente ele vai ser esse caminho que é o node e esse ponto.
+
+Org.
+
+Então aqui nessa tela a gente já vai se deparar com duas e dois cards aqui pra gente fazer o download,
+
+né?
+
+A versão 18 e a versão 20, né?
+
+Então, toda vez que a gente for baixar uma versão de software, seja o novo, seja o Angular, ou seja
+
+algum outro, a gente vai sempre dar preferência para essa versão LTS.
+
+Então, essa versão LTS é uma versão, né?
+
+Que significa long term support.
+
+Então é só ir aonde o node de é essa aqui, né?
+
+Vai providenciar um suporte nem a longo prazo, né?
+
+Então isso aqui é a melhor e melhor versão e essa versão já está validada pela equipe lá do novo JS,
+
+né?
+
+Então, a versão current é a versão que está disponível para nós desenvolvedores testar as novas features
+
+que está vindo no Node, né?
+
+Então a gente tem sim, antecipadamente uma versão para a gente conseguir testar e validar o que está
+
+sendo feita.
+
+Então é nessa ness, nessa versão aqui, que a comunidade geralmente relata se tem algum bug nesse,
+
+tem alguma melhoria ser feita e depois essa versão 20 vai se tornar uma versão LTS também.
+
+Então pra instalar o no DE, essa é bem simples, basta a gente fazer o download aqui né?
+
+Então aqui ele vai baixar a versão do NuGet, então a gente vai utilizar a versão 18, que é a última
+
+versão, e a gente também vai utilizar a última, a última versão do Angular, né?
+
+É pra gente editar o code escreveu Os nossos códigos a gente vai utilizar o editor VSCode, então VSCode
+
+basicamente ele vai digitar Cow Ponto, Visual Studio, ponto conta.
+
+Que é o caminho para download.
+
+Simplesmente você pode vim aqui no google e digitar Só vs Coldtown, então vai ser praticamente vai
+
+ser a primeira.
+
+Primeiro link aqui, tá?
+
+Aí, maravilha.
+
+Então aqui ele já detecta pessoal com qual é o tipo de ambiente que a gente está.
+
+Então se a gente tiver num ambiente Windows, ele já vai trazer aqui.
+
+Download para Windows Quem estiver em Linux para Linux tiver em Mac para Mac, então eu vou fazer o
+
+download também aqui do VS Studios Prescott para a gente editar os nossos códigos, tá?
+
+Então, no jazz que a gente já viu que já baixou, então basta clicar aqui ou ir na pastinha de downloads
+
+e dar dois cliques que ele vai abrir aqui para a gente.
+
+Como eu estou com duas telas, ele apareceu na outra tela aqui.
+
+Então, basicamente é essa janelinha que ele vai aparecer para a gente, né?
+
+Então, nessa janelinha, a primeira coisa que ele vai fazer.
+
+Ele vai calcular o espaço que a gente tem livre aqui no nosso nosso computador, né?
+
+Depois que ele fizer isso, ele vai liberar esse botão de next aqui para a gente, né?
+
+Onde a gente vai dar sequência na instalação, então, beleza.
+
+Então ele viu e percebeu que já tem o espaço suficiente para a instalação.
+
+Então a gente dá um next aqui é apenas para a gente a ser aceitar os termos de licença do software.
+
+Aqui ele mostra onde vai ser instalado.
+
+Aí nessa janelinha que é bem importante da gente.
+
+Toma cuidado com ela, porque aqui ele mostra tudo o que vai ser instalado e o novo host runtime, né?
+
+Depois a gente vai poder rodar comandos no terminal, via no GPS e essa janelinha que é o Node é de
+
+dentro, pf.
+
+Esse daqui a gente tem que adicionar a ele, já tem que marcar essa opção, essa pessoa, porque apesar
+
+ela já vem de full marcada.
+
+Mas se a gente remover esse o now de S, o npm, a gente acaba perdendo os comandos via terminal.
+
+Então do jeito que vier que a gente já pode prosseguir essa.
+
+Aqui.
+
+Ele pergunta se a gente quer instalar um gerenciador de de de software que é o chocolate aqui, né?
+
+Então, isso aqui basicamente é só para a gente ter um gerenciamento de versão de software que no momento
+
+a gente não vai instalar, tá?
+
+E vai mandar instalar.
+
+Então, basicamente ele vai fazer a instalação agora para a gente.
+
+Então, na verdade eu já tenho o Node instalado, né?
+
+Mas aqui a seguir, agora ele vai fazer a instalação, né?
+
+E a gente vai ver os status aqui nessa barrinha até então.
+
+Outro recurso importante que a gente precisa instalar no nosso software é o Angular Celine.
+
+Só que o Angular, diferentemente do Verses Studio e do Node.
+
+Então, diferente do verse cold e do Nod que a gente baixa um instalador.
+
+O Angular Celi basicamente é uma linha de comando que a gente vai rodar no nosso terminal.
+
+Até apareceu a janelinha aqui para a gente dar um saltinho.
+
+Até que a gente dá um sim, né?
+
+Que é para aceitar que a gente instale o Now de S na nossa máquina.
+
+Então a gente vai dar um sim aqui e agora ele vai começar a instalação.
+
+Tá achando que ele vai fazer mais um passo que ele fez anteriormente?
+
+A de calcular o espaço livre na nossa máquina.
+
+E o PS.
+
+Hoje a mesma coisa está pessoal.
+
+Opa!
+
+Então parece que hoje é a mesma coisa.
+
+A gente vai clicar aqui e instalar o estúdio VSCO de Estúdio aqui.
+
+Ele vai abrir também uma janelinha.
+
+E essa janelinha vai pedir algumas informações para a gente.
+
+É basicamente igual no de a gente vai dar um next, next, next.
+
+Aqui.
+
+A pele que acabei apertando duas vezes e abriu dois.
+
+Taí essa janelinha aqui.
+
+Então, aqui é a mesma coisa que a gente já fez no jazz e vai dar um.
+
+Eu aceito o acordo aqui, vai dar um próximo e aqui, muito importante da pessoa manter essa.
+
+Esse quadradinho aqui marcado para que a gente adicione também.
+
+Houvesse estúdio ou estúdio ali no perfil do Windows, para a gente conseguir rodar alguns comandos
+
+via terminal.
+
+Eu costumo marcar esse aqui também, que ele cria para mim um atalho na minha área de trabalho ali.
+
+Mas esse aqui vai de cada um.
+
+Então só pra me passar cada item aqui tá nesse primer aqui.
+
+Ele vai.
+
+Ele vai dar uma opção quando a gente clicar com o botão direito dentro de uma pasta, ele vai perguntar
+
+se a gente quer abrir aquela pasta no estúdio.
+
+Essa segunda que se um arquivo específico ele quer, né?
+
+Na verdade, o contrário aqui é um arquivo.
+
+Se a gente clicar com o botão direito em cima de um arquivo, se a gente quer abrir aquele arquivo no
+
+VSCode, né?
+
+Ou se aqui é um diretório, né?
+
+E aqui ele vai adicionar o code.
+
+Quando a gente abrir um texto qualquer, ele vai dar a possibilidade do code servir como editor padrão,
+
+tá?
+
+Basicamente isso.
+
+E aqui só apertar, instalar é bem parecido com loja.
+
+O novo já está instalando.
+
+E o.
+
+VS.
+
+Estúdio também já está sendo instalado.
+
+Então vamos clicar aqui.
+
+Então vou.
+
+Vou pausar o vídeo, afinal, que vou terminar, eu volto.
+
+Então aqui pessoal, ele terminou a instalação.
+
+Então já é dessa mensagem aqui no final.
+
+Então a gente pode dar um finish e o V.S. Estúdio aqui.
+
+VS Cold, ele vai perguntar A gente quer abrir o versículo?
+
+Então nesse momento já vou pô que não vai concluir a instalação.
+
+E aqui, agora a gente vai instalar o Angular Celli, que eles comentam bastante, clicar aqui para
+
+copiar ata e a gente pode vir aqui no nosso Windows e apertar escrever que a Semed tá, Então a gente
+
+vai clicar aqui Nesse primeiro, que é a prompt de comando, vai clicar aqui em abrir.
+
+Então ele vai abrir pra gente uma janelinha do terminal do Windows aqui.
+
+Então a primeira coisa que a gente vai ver quando a gente terminar de instalar o NuGet, a gente vai
+
+dar o comando load.
+
+Menos ver.
+
+Então esse comando que vai fazer com que o novo GS mostre conversão do novo de está instalado.
+
+Então a gente vê que quer a diversão 18 e 16 zero e a gente vai ver a versão do npm também, que é um
+
+load pack de manejar o gerenciador de pacotes do Node menos ver.
+
+Então a gente vai passar aqui, vai ver qualquer versão, a gente vai ver que o npm.
+
+Está na versão 9,6 ponto zero.
+
+E.
+
+A gente vai instalar agora o comando que a gente acabou de copiar.
+
+A gente vai ver que dá um npm install menos g, esse menos g que para instalar globalmente.
+
+Tá pessoal?
+
+Então a gente usa o menos de quando a gente vai instalar, por exemplo, um recurso que a gente vai
+
+utilizar em qualquer projeto na gente, não é instalar aquele recurso, somente um projeto específico
+
+em um nível de pasta específico, né?
+
+Então esse menos a gente vai instalar globalmente na nossa máquina.
+
+Então basta dar um enter aqui, então.
+
+Então agora ele vai começar a fazer a instalação do do Angular.
+
+E a partir de agora, assim que ele terminar a instalação, vai ter vários e vários recursos à disposição.
+
+Então vou passar aqui alguns deles, tá?
+
+Então, se a gente vê aqui nesse cantinho aqui, a gente vai ver que tem esse CL Command Reference,
+
+né?
+
+Que são os códigos, né?
+
+Qual que são os comandos disponíveis no Angular Celly pra gente utilizar?
+
+Então, por exemplo, esse ng add a gente adiciona um pacote NG e build faz o build da nossa aplicação.
+
+Aqui vou vou passar pelos que a gente mais utiliza o Generate Generic.
+
+A gente vai usar o tempo todo né?
+
+Quando ele for adicionar e gerar um novo, um novo componente, um novo serviço, um novo módulo que
+
+a gente vai ver posteriormente aqui.
+
+NGN genio vai ser toda vez que a gente quiser criar um novo projeto, a Angular tá?
+
+Então aqui o run para a gente rodar na nossa aplicação.
+
+Ele serve também para rodar a aplicação Running Servlets, rodar algum script aqui o NG version para
+
+a gente ver qual versão do handler está instalado, né?
+
+E esses são os comandos, assim que eu vejo que são os mais utilizados.
+
+Então senti entrar que dentro da documentação do Ed NG Generation a gente vai ver que ele tem vários
+
+sub comandos.
+
+Então a gente pode criar que é uma aplicação, uma classe, um componente, um arquivo de configuração.
+
+Podemos criar diretivas.
+
+Mais pra frente a gente vai criar diretivas customizadas, criar enums, né?
+
+Guarda de rota, interceptadores, interfaces, módulos, pipes também.
+
+Então isso que a gente vai utilizar com muita frequência, tá pessoal?
+
+Então vamos ver se a gente já terminou aqui a instalação, né?
+
+Tá aquele estalo, né?
+
+Como eu já tinha, como eu já tem, eu tenho instalado.
+
+E ele está sugerindo que a gente faça uma atualização e que o NPM que a gente acabou de instalar já
+
+tem uma versão mais recente.
+
+Se a gente quiser instalar, basta rodar esse comando que o npm install menos g npm passar a versão
+
+da para atualizar.
+
+A gente não vai fazer isso no momento, tá pessoal?
+
+Então o que a gente vai fazer?
+
+Vou pegar aqui.
+
+Vou.
+
+Deixa eu ver o níveis de pastas que eu tenho aqui, então tem bastante pasta aqui né?
+
+Então vou vim aqui dentro do meu.
+
+Eu tenho uma pastinha que é projeto angular, né?
+
+Mas vou criar uma outra que eu vou dar um mkdir, né?
+
+Esse comando mkdir é MK, é de máquina de fazer e o dir é de diretório, então criar um novo diretório.
+
+Então o que que a gente vai fazer?
+
+Eu vou chamar aqui de projeto.
+
+Traço em Angular.
+
+Passo um pra projeto, um que a gente vai criar.
+
+Então agora eu vou dar um CD projeto em inglês e traço um.
+
+Tá beleza?
+
+Caminhei pra dentro dessa pasta, né?
+
+Então, o que a gente vai fazer agora?
+
+Eu vou dar o primeiro comando que a gente usa no Engler Celli que é o NG New, né?
+
+Então ele é genio.
+
+Ele vai criar um novo projeto a partir de um nome que a gente passar pra ele.
+
+Então qual vai ser o nome?
+
+Vou passar aqui, vou chamar de Projeto um.
+
+Projeto.
+
+Então vou dar um enter, tá?
+
+Então quando a gente der um entra aqui, ele vai pegar esse comando e vai criar um componente básico
+
+que vai ser esse projeto um para a gente.
+
+Então agora a gente ele demora um pouquinho, porque ele vai além de rodar esse comando.
+
+Ele também vai fazer uma série de perguntas para a gente.
+
+Então ele vai perguntar se a gente quer criar um roteador, bloquear, adicionar um angular out.
+
+A gente vai ver isso durante o nosso curso.
+
+Então vou um pouquinho sim, né?
+
+Aqui ele quer e vai perguntar qual tipo de utilização que a gente quer utilizar a gente vai utilizar
+
+do SSSS.
+
+Depois eu vou explicar a diferença de cada um deles.
+
+Então aqui, agora ele vai começar a instalação para essa instalação que costuma demorar um pouco,
+
+então eu vou pausar aqui e assim que terminar eu volto.
+
+Aí pessoal, E terminou aqui agora a instalação, né?
+
+Então, aquele é a única coisa que a gente tem que fazer agora dá um CD, Projeto um.
+
+E agora a gente vai entrar dentro da pastinha.
+
+Então, agora só para validar também se o nosso vs.
+
+VS Code foi adicionado ao PF do nosso Windows, a gente vai rodar esse comando aqui.
+
+O cod espaço ponto.
+
+Isso aqui né pessoal?
+
+Vai fazer com que a gente com que esse diretório projeto um aqui seja aberto no VSCode, então vamos
+
+rodar um ver.
+
+E agora ele vai abrir que o versículo ele abriu e que houvesse.
+
+Conte pra gente.
+
+Agora vamos dizer que a pasta já está, a pastinha já está aberta.
+
+Projeto um.
+
+Então essa que é a estrutura de um projeto padrão do ângulo.
+
+Então a gente tem um src, uma pastinha app.
+
+E a gente tem que todo os arquivos iniciais do nosso projeto pessoal.
+
+Então, pessoal, basicamente é isso.
+
+A nossa aula de hoje.
+
+Espero que vocês tenham gostado dessa aula.
+
+Acho que tudo que eu queria apresentar para vocês nessa aula foi o que eu apresentei.
+
+Na próxima aula vou mostrar a anatomia.
+
+Passa a pasta de quais são a estrutura básica de um projeto angular.
+
+Então espero que vocês tenham gostado e até a próxima aula.
+obs.: já tenho instalado...
