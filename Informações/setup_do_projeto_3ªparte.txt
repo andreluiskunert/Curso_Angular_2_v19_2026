@@ -1,0 +1,186 @@
+obs.:
+-> Devido o fato que formatei:
+
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desen
+volvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ git clone https://github.com/andreluiskunert/Curso_Angular_2_v19_2026.git
+Comando 'git' não encontrado, mas poder ser instalado com:
+sudo apt install git
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desen
+volvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ sudo apt install git 
+[sudo] senha para desenvolvedor:        
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+Os pacotes adicionais seguintes serão instalados:
+  git-man liberror-perl
+Pacotes sugeridos:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+Os NOVOS pacotes a seguir serão instalados:
+  git git-man liberror-perl
+0 pacotes atualizados, 3 pacotes novos instalados, 0 a serem removidos e 0 não atualizados.
+É preciso baixar 4.147 kB de arquivos.
+Depois desta operação, 21,0 MB adicionais de espaço em disco serão usados.
+Você quer continuar? [S/n] s
+Obter:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 liberror-perl all 0.17029-1 [26,5 kB]
+Obter:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.15 [955 kB]
+Obter:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.15 [3.166 kB]
+Baixados 4.147 kB em 3s (1.192 kB/s)
+A seleccionar pacote anteriormente não seleccionado liberror-perl.
+(Lendo banco de dados ... 568211 ficheiros e directórios actualmente instalados.
+)
+A preparar para desempacotar .../liberror-perl_0.17029-1_all.deb ...
+A descompactar liberror-perl (0.17029-1) ...
+A seleccionar pacote anteriormente não seleccionado git-man.
+A preparar para desempacotar .../git-man_1%3a2.34.1-1ubuntu1.15_all.deb ...
+A descompactar git-man (1:2.34.1-1ubuntu1.15) ...
+A seleccionar pacote anteriormente não seleccionado git.
+A preparar para desempacotar .../git_1%3a2.34.1-1ubuntu1.15_amd64.deb ...
+A descompactar git (1:2.34.1-1ubuntu1.15) ...
+Configurando liberror-perl (0.17029-1) ...
+Configurando git-man (1:2.34.1-1ubuntu1.15) ...
+Configurando git (1:2.34.1-1ubuntu1.15) ...
+A processar 'triggers' para man-db (2.10.2-1) ...
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desen
+volvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ git clone https://github.com/andreluiskunert/Curso_Angular_2_v19_2026.git
+Cloning into 'Curso_Angular_2_v19_2026'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 4), reused 10 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 9.36 KiB | 9.36 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ # Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.21.1".
+
+# Verify npm version:
+npm -v # Should print "10.9.4".
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 16631  100 16631    0     0  54480      0 --:--:-- --:--:-- --:--:-- 54349
+=> Downloading nvm from git to '/home/desenvolvedor/.nvm'
+=> Cloning into '/home/desenvolvedor/.nvm'...
+remote: Enumerating objects: 384, done.
+remote: Counting objects: 100% (384/384), done.
+remote: Compressing objects: 100% (328/328), done.
+remote: Total 384 (delta 42), reused 182 (delta 28), pack-reused 0 (from 0)
+Receiving objects: 100% (384/384), 392.50 KiB | 1.83 MiB/s, done.
+Resolving deltas: 100% (42/42), done.
+* (HEAD detached at FETCH_HEAD)
+  master
+=> Compressing and cleaning up git repository
+
+=> Appending nvm source string to /home/desenvolvedor/.bashrc
+=> Appending bash_completion source string to /home/desenvolvedor/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+Downloading and installing node v22.21.1...
+Downloading https://nodejs.org/dist/v22.21.1/node-v22.21.1-linux-x64.tar.xz...
+####################################################################################################################################################################################################################################### 100,0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v22.21.1 (npm v10.9.4)
+Creating default alias: default -> 22 (-> v22.21.1)
+v22.21.1
+10.9.4
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ npm install -g @angular/cli@17
+npm warn deprecated read-package-json@7.0.1: This package is no longer supported. Please use @npmcli/package-json instead.
+
+added 242 packages in 17s
+
+43 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 11.7.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.7.0
+npm notice To update run: npm install -g npm@11.7.0
+npm notice
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ ng --version
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ ng --v
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ ng --help
+ng <command>
+
+Commands:
+  ng add <collection>            Adds support for an external library to your project.
+  ng analytics                   Configures the gathering of Angular CLI usage metrics.
+  ng build [project]             Compiles an Angular application or library into an output directory named dist/ at the given output path.                                                                                        [aliases: b]
+  ng cache                       Configure persistent disk cache and retrieve cache statistics.
+  ng completion                  Set up Angular CLI autocompletion for your terminal.
+  ng config [json-path] [value]  Retrieves or sets Angular configuration values in the angular.json file for the workspace.
+  ng deploy [project]            Invokes the deploy builder for a specified project or for the default project in the workspace.
+  ng doc <keyword>               Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.                                                                                            [aliases: d]
+  ng e2e [project]               Builds and serves an Angular application, then runs end-to-end tests.                                                                                                                            [aliases: e]
+  ng extract-i18n [project]      Extracts i18n messages from source code.
+  ng generate                    Generates and/or modifies files based on a schematic.                                                                                                                                            [aliases: g]
+  ng lint [project]              Runs linting tools on Angular application code in a given project folder.
+  ng new [name]                  Creates a new Angular workspace.                                                                                                                                                                 [aliases: n]
+  ng run <target>                Runs an Architect target with an optional custom builder configuration defined in your project.
+  ng serve [project]             Builds and serves your application, rebuilding on file changes.                                                                                                                                  [aliases: s]
+  ng test [project]              Runs unit tests in a project.                                                                                                                                                                    [aliases: t]
+  ng update [packages..]         Updates your workspace and its dependencies. See https://update.angular.io/.
+  ng version                     Outputs Angular CLI version.                                                                                                                                                                     [aliases: v]
+
+Options:
+  --help  Shows a help message for this command in the console.                                                                                                                                                                      [boolean]
+
+For more information, see https://angular.dev/cli/.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ ng version
+? Would you like to enable autocompletion? This will set up your terminal so pressing TAB while typing Angular CLI commands will show possible options and autocomplete arguments. (Enabling autocompletion will modify configuration files in
+ your home directory.) Yes
+Appended `source <(ng completion script)` to `/home/desenvolvedor/.bashrc`. Restart your terminal or run the following to autocomplete `ng` commands:
+
+    source <(ng completion script)
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable --global
+
+Global setting: enabled
+Local setting: No local workspace configuration file.
+Effective status: enabled
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 17.3.17
+Node: 22.21.1 (Unsupported)
+Package Manager: npm 10.9.4
+OS: linux x64
+
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1703.17 (cli-only)
+@angular-devkit/core         17.3.17 (cli-only)
+@angular-devkit/schematics   17.3.17 (cli-only)
+@schematics/angular          17.3.17 (cli-only)
+    
+Warning: The current version of Node (22.21.1) is not supported by Angular.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ ^C
+desenvolvedor@desenvolvedor-ThinkPad-T440p:/media/desenvolvedor/HD_INTERNO/Desenvolvimento Full Stack -Estácio/Cursos_Udemy/Angular_02(v19)$ 
+
