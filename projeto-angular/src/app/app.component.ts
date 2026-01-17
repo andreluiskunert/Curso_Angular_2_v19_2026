@@ -42,10 +42,10 @@ export class AppComponent {
 
   title = 'Bem Vindo ao treinamento de Angulars';
 
-  imgUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
+  imgUrl = 'https://hermes.dio.me/articles/cover/2a5cce87-dc3a-4033-b976-3627bf4ecdab.png';
 
   chamarFuncao() {
-    alert('Evento de clique funcionando!');
+    alert('Continue estudando  Angular!');
   }
 
 }

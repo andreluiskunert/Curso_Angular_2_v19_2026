@@ -1,6 +1,22 @@
-<h1> {{title}}</h1>
+<div class="container">
 
- <button (click)="chamarFuncao()"> Chanar evento</button>
-<img [src]="imgUrl">
- <input [(ngModel)]="title">
+  <img [src]="imgUrl" alt="Imagem Angular" class="logo">
+
+  <h1>{{ title }}</h1>
+
+  <a
+    href="https://www.youtube.com/watch?v=_dh6dpaiTrY"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn-link"
+  >
+Masterclass Angular 20 | Atualizado 2025
+  </a>
+
+  <button (click)="chamarFuncao()">Chamar evento</button>
+
+  <input [(ngModel)]="title">
+
+</div>
+
 <router-outlet></router-outlet>
