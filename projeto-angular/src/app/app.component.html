@@ -13,10 +13,27 @@
 Masterclass Angular 20 | Atualizado 2025
   </a>
 
-  <button (click)="chamarFuncao()">Chamar evento</button>
+  <!-- <button (click)="chamarFuncao()">Chamar evento</button>
 
-  <input [(ngModel)]="title">
+  <input [(ngModel)]="title"> -->
 
 </div>
+<!-- <h2 *ngIf="title; else mensagemPadrao">{{title}}</h2>
+<ng-template #mensagemPadrao> 
+  <h3> Bora La estudar Angular</h3>
+</ng-template> -->
+<!-- <span [ngSwitch]="title">
+<p *ngSwitchCase="true">
+  Esse é um paragrafo verdadeiro
+</p>
+<p *ngSwitchCase="false">
+ Esse é um paragrafo falso
+</p>
+<p *ngSwitchDefault>
+ Esse é um paragrafo Default
+</p>
+</span> -->
+
+
 
 <router-outlet></router-outlet>

@@ -1,22 +1,4 @@
-// import { Component } from "@angular/core";
-// import { RouterOutlet } from "@angular/router";
 
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [RouterOutlet],
-//   templateUrl: './app.component.html',
-//   styleUrls: ['./app.component.scss'],
-// })
-// export class AppComponent {
-//   title = 'Bem Vindo ao treinamento de Angulars';
-//   imgUrl = "https://www.altoros.com/blog/wp-content/uploads/2013/08/evaluation-of-angularjs-featured-image.png"
-//   constructor(){
-
-//   }
-//   chamarFuncao(){
-//     console.log("Esse é click...")
-//   }
 //   //  4 tipos de data binding:
 //   //  1ª Interpolação {{title}}
 //   //  2ª Property bind <img [src]="imgUrl">
@@ -40,12 +22,22 @@ import { FormsModule } from "@angular/forms";
 })
 export class AppComponent {
 
-  title = 'Bem Vindo ao treinamento de Angulars';
+  title = 'Bem Vindo ao treinamento de Angular';
 
-  imgUrl = 'https://hermes.dio.me/articles/cover/2a5cce87-dc3a-4033-b976-3627bf4ecdab.png';
+  imgUrl = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
+  
+  constructor(){
 
-  chamarFuncao() {
-    alert('Continue estudando  Angular!');
   }
+
+  // chamarFuncao() { 
+  //   alert('Continue estudando  Angular!');
+  // }
+  //  Sabado, 17/01/2026_de noite
+  // if/else/switch/case
+  // 1ª ngIF-> usamos pra exibir ou ocultar elementos;
+  // 2ª ngSwitch -> 
+  
+
 
 }
