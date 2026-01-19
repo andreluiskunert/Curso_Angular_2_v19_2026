@@ -33,7 +33,55 @@ Masterclass Angular 20 | Atualizado 2025
  Esse é um paragrafo Default
 </p>
 </span> -->
+<!-- Domingo 1/8/01/2026 
+    _De noite 
+-->
+   <!-- <table>
 
+    <th>Nome</th>
+    <th>Sexo</th>
+     <th>Idade</th>
+     <th>Profissão</th>
+     <tr>
+      <td>André Luis</td>
+      <td>Masculino</td>
+      <td>43 anos</td>
+      <th>Dev Full Stack</th>
+     </tr>
+      <tr>
+      <td> Luis André</td>
+      <td>Masculino</td>
+      <td>44 anos</td>
+      <th>Dev Full Stack Python</th>
+     </tr>
+      <tr>
+      <td>Luis Carlos</td>
+      <td>Masculino</td>
+      <td>40 anos</td>
+      <th>Q.A</th>
+     </tr>
+  </table> -->
+<h3>Tabela</h3>
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Idade</th>
+      <th>Profissão</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{ cliente.nome }}</td>
+      <td>{{ cliente.sexo }}</td>
+      <td>{{ cliente.idade }}</td>
+      <td>{{ cliente.profissao }}</td>
+    </tr>
+  </tbody>
+</table>
 
 
 <router-outlet></router-outlet>
