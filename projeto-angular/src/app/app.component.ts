@@ -24,26 +24,30 @@ export class AppComponent {
     {
       nome: 'André Luis',
       sexo: 'Masculino',
-      idade: '43 anos',
-      profissao: 'Dev Full Stack JavaScript'
+      idade: 43,
+      profissao: 'Dev Full Stack JavaScript',
+      salario: '140000'
     },
     {
       nome: 'Luis André',
       sexo: 'Masculino',
       idade: '44 anos',
-      profissao: 'Dev Full Stack Python'
+      profissao: 'Dev Full Stack Python',
+      salario:'125000'
     },
     {
       nome: 'Luis Carlos',
       sexo: 'Masculino',
-      idade: '45 anos',
-      profissao: 'Q.A'
+      idade: 45 ,
+      profissao: 'Q.A',
+      salario: '110000'
     },
     {
       nome: 'Luis Antônio',
       sexo: 'Masculino',
-      idade: '42 anos',
-      profissao: 'Dev Full Stack PHP'
+      idade: 42,
+      profissao: 'Dev Full Stack PHP',
+      salario: '10000'
     },
   ];
 

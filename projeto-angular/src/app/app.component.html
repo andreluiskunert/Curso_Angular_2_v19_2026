@@ -69,19 +69,24 @@ Masterclass Angular 20 | Atualizado 2025
       <th>Nome</th>
       <th>Sexo</th>
       <th>Idade</th>
-      <th>Profissão</th>
+      <th>Profissão </th>
+     <th>Salario </th>
+
+      
     </tr>
   </thead>
 
   <tbody>
     <tr *ngFor="let cliente of clientes">
-      <td>{{ cliente.nome }}</td>
-      <td>{{ cliente.sexo }}</td>
+      <td>{{ cliente.nome | uppercase }}</td>
+      <td>{{ cliente.sexo | lowercase}}</td>
       <td>{{ cliente.idade }}</td>
       <td>{{ cliente.profissao }}</td>
+      <td>{{ cliente.salario | currency: 'BRL'}}</td>
+
     </tr>
   </tbody>
 </table>
-
-
+<br>
+<span>{{clientes | json}}</span>
 <router-outlet></router-outlet>
