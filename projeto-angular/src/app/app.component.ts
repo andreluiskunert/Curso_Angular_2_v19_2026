@@ -23,28 +23,28 @@ export class AppComponent {
   clientes = [
     {
       nome: 'André Luis',
-      sexo: 'Masculino',
+      sexo: 'M',
       idade: 43,
       profissao: 'Dev Full Stack JavaScript',
       salario: '140000'
     },
     {
       nome: 'Luis André',
-      sexo: 'Masculino',
+      sexo: 'M',
       idade: '44 anos',
       profissao: 'Dev Full Stack Python',
       salario:'125000'
     },
     {
       nome: 'Luis Carlos',
-      sexo: 'Masculino',
+      sexo: 'M',
       idade: 45 ,
       profissao: 'Q.A',
       salario: '110000'
     },
     {
       nome: 'Luis Antônio',
-      sexo: 'Masculino',
+      sexo: 'M',
       idade: 42,
       profissao: 'Dev Full Stack PHP',
       salario: '10000'
