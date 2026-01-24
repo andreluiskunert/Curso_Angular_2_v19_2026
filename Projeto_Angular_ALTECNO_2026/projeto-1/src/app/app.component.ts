@@ -19,11 +19,16 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
 
-  title: string = 'Projeto Angular ALTECNO 2026';
+  title: string = '';
   nome: string = '';
   imgUrl: string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2US6o96hwPPpRSKcuTs9eVzH2nV1eM5IHg&s';
 
   chamarFuncao() {
     console.log('Função chamada!');
   }
+  constructor() {}
+  // ngIf...> usando complemento else, usamos pra exibir ou ocultar elementos tomada por decisões logicas
+  // fazer de noite hoje
+  // ngScwicht...> usado para tomar decisões mais complexas, com várias condições
+
 }

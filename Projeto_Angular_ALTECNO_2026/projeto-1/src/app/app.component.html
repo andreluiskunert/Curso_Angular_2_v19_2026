@@ -1,13 +1,18 @@
-<h1>{{ title }}</h1>
+<h1 *ngIf="title; else mensagemPadrao">{{ title }}</h1>
+<!-- Soluções -->
+<ng-template #mensagemPadrao>
+  <h1>bem-vindos ao treinamento de desenvolvimento Angular</h1>
+</ng-template>
 
-<button (click)="chamarFuncao()">Chamar evento</button>
+<!-- <button (click)="chamarFuncao()">Chamar evento</button> -->
 <br><br>
 
-<img [src]="imgUrl" alt="Imagem ilustrativa">
+<img [src]="imgUrl" height="1000%" alt="Imagem ilustrativa" algin-text="center">
+  
 
 <br><br>
 
-<input type="text" [(ngModel)]="title">
+<!-- <input type="text" [(ngModel)]="title"> -->
 
 <h2>O que são componentes?</h2>
 
