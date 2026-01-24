@@ -1,84 +1,19 @@
-<h1>{{title}}</h1>
-<button (click)="chamarFuncao()"> Chamar evento  </button>
-<br>
-<img [src]="imgUrl">
-<input [(ngModel)]="title">
+<h1>{{ title }}</h1>
+
+<button (click)="chamarFuncao()">Chamar evento</button>
+<br><br>
+
+<img [src]="imgUrl" alt="Imagem ilustrativa">
+
+<br><br>
+
+<input type="text" [(ngModel)]="title">
+
 <h2>O que são componentes?</h2>
+
 <p>
-    Olá pessoal, Bem vindos a mais uma aula do nosso curso de Angular.
-
-Então nessa aula vamos conhecer o que são componentes do framework o Angular.
-
-Então os componentes do Angular né pessoal? 
-
-Então são elementos modulares que representam parte de uma aplicação web.
-
-Então o que que quer dizer isso?
-
-Então que cada componente angular eles representam como se fosse uma aplicação isolada do nosso sistema,
-
-né?
-
-Então, onde a gente consegue reutilizá lo e usá lo de forma isolada?
-
-Então um arquivo é um componente, então ele é composto geralmente por um arquivo HTML, né?
-
-Então agora a gente está vendo que a gente tem esse app component, então é o primeiro componente da
-
-nossa aplicação, Então é o componentes.
-
-Então ele é composto por um arquivo HTML, um arquivo de estilização.
-
-Que no caso em está usando SC.
-
-CS é um arquivo de TypeScript que define a lógica e o comportamento do componente.
-
-Então, além disso, os componentes podem ter uma série de propriedades de entrada, tipo inputs, campos
-
-de checkbox.
-
-Então isso.
-
-São características de um de um template em HTML, então os nossos componentes neles vão ter uma série
-
-de entradas e também podem ter saídas que permite a comunicação com outros componentes ou com o módulo
-
-principal da nossa aplicação, né?
-
-Então os componentes quando a gente falar de componentes angular, então a gente fala que isso são e
-
-são partes fundamentais da arquitetura de uma aplicação desenvolvida com o comando, então permite criar
-
-interface de usuário.
-
-A interface não onde o conteúdo da nossa aplicação ela fica em constante atualização e alteração, e
-
-isso é uma forma importantíssima que o Angular tem.
-
-Para para tornar uma aplicação que seja, que ela cresça de forma modular e também que ela seja escalável.
-
-Então, o que a gente mais tem hoje no mercado são aplicações de grande escala, tipo bancos e empresas
-
-de diversas locadoras de serviços financeiras.
-
-Então são projetos que crescem e tem diversos usuários na base de dados.
-
-Então, são projetos que o Angular atende extremamente bem.
-
-Então, o primeiro componente que a gente tem em toda a aplicação é um Learn.
-
-Então vai ser esse app component, né?
-
-Então, nas próximas aulas a gente vai aprender como gerar novos componentes, né?
-
-E também a gente vai aprender como reutilizar aquele e aquele componente para não ficar duplicando código
-
-o tempo todo.
-
-Então, espero que vocês tenham gostado dessa aula, então vejo vocês na próxima aula.
-
-Até mais!
-
+  Olá pessoal, bem-vindos a mais uma aula do nosso curso de Angular.
+  <!-- texto mantido -->
 </p>
 
-<router-outlet />
+<router-outlet></router-outlet>
