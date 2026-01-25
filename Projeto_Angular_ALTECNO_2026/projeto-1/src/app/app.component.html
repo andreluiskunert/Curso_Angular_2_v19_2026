@@ -5,12 +5,23 @@
 </ng-template>
 
 <!-- <button (click)="chamarFuncao()">Chamar evento</button> -->
-<br><br>
+<br>
 
-<img [src]="imgUrl" height="1000%" alt="Imagem ilustrativa" algin-text="center">
+<img [src]="imgUrl" alt="Imagem ilustrativa" algin-text="center">
   
 
 <br><br>
+<span [ngSwitch]="title">
+<p *ngSwitchCase="true">
+    § Esse é um paragrafo exibido quando a condição é verdadeira.
+</p>
+<p *ngSwitchCase="false">
+  § Esse é um paragrafo exibido quando a condição é falsa.
+</p>
+<p *ngSwitchDefault>
+ § Esse é um paragrafo exibido quando nenhuma das condições Defaut é atendida.
+</p>
+</span>
 
 <!-- <input type="text" [(ngModel)]="title"> -->
 

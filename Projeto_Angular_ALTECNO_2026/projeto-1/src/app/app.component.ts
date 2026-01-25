@@ -19,16 +19,19 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
 
-  title: string = '';
+  title: string = 'ola-angular';
   nome: string = '';
-  imgUrl: string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2US6o96hwPPpRSKcuTs9eVzH2nV1eM5IHg&s';
+  imgUrl: string = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
 
-  chamarFuncao() {
-    console.log('Função chamada!');
-  }
+  // chamarFuncao() {
+  //   console.log('Função chamada!');
+  // }
   constructor() {}
+  //  sábado 24/012026_ de noite
   // ngIf...> usando complemento else, usamos pra exibir ou ocultar elementos tomada por decisões logicas
   // fazer de noite hoje
   // ngScwicht...> usado para tomar decisões mais complexas, com várias condições
 
-}
+
+
+}  
