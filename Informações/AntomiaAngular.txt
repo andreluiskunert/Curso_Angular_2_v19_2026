@@ -1,0 +1,469 @@
+Olá pessoal, Bem vindos a mais uma aula aqui do nosso curso de Angular.
+
+Nessa aula vamos descobrir como é uma anatomia do nosso projeto em Angular de um projeto gerado em Angola.
+
+Então para começarmos, vamos abrir nosso terminal aqui, já que nós já temos os nossos recursos todos
+
+instalados no pode ser lido Angular e vs Code.
+
+Então vamos estar abrindo aqui o nosso no nosso terminal.
+
+Deixa eu traze meu terminal para cá.
+
+Então a primeira coisa que a gente tem que fazer, que é definir um local de instalação do nosso hangar,
+
+né?
+
+Então aqui eu estou dentro do meu usuário, então geralmente eu costumo criar que uma pasta nesse diretório.
+
+Não vou criar aqui uma pasta mkdir só e digitais comando mkdir aqui.
+
+Então vamos.
+
+Ou você pode ir lá dentro da pasta que você quiser e clicar com o botão direito e criar uma nova pasta
+
+e colocar o nome dele.
+
+Geralmente eu costumo gerar aqui pelo terminal porque é mais rápido, então que vão colocar aqui Projeto
+
+angular, projeto, traço angular.
+
+Logo.
+
+Então agora a gente navega para essa pasta, né?
+
+Então, aqui dentro a gente já tem uma pasta onde a gente vai colocar os nossos projetos.
+
+Então, aqui, agora, para a gente gerar um projeto em ângulo, a gente vai digitar ng new, né?
+
+Então, essa que é um dos comandos que a gente que a gente tem disponível no Angular.
+
+Celina Então a energia de Angular, né?
+
+New de novo.
+
+E agora a gente vai adicionar um nome de um projeto.
+
+Então vou colocar o projeto um, já que a gente não vai evoluir esse projeto, eu vou só digitar o projeto
+
+um.
+
+Geralmente, nesse passo aqui ele vai fazer algumas perguntas sobre esse projeto que a gente está gerando,
+
+né?
+
+Então ele vai perguntar qual que é o tipo de utilização que a gente quer?
+
+Essa primeira pergunta, né?
+
+E ele pergunta se a gente quer adicionar esse recurso de roteamento do ângulo, então a gente vai colocar
+
+que sim.
+
+Por default, ele não gera até.
+
+Então vamos criar este sim.
+
+E eu costumo usar.
+
+Geralmente as empresas também usa muito o SSS né?
+
+Que ele traz um pouco mais de recursos do que o CSS puro, mas no final das contas tudo vai ser transportado
+
+para CSS.
+
+Então aqui vai ser a gente vai usar o CSS, então a partir de agora já está gerando que pra gente o
+
+nosso projeto, né?
+
+Então, aqui ele já criou os arquivos base do Angular, né?
+
+Então já trouxe as configurações aqui do TypeScript, já trouxe aqui um README padrão do programa,
+
+já trouxe aqui as configurações do ângulo dentro desse angular Ponto Jason e o pack de ponto já tem
+
+todas as características desde bibliotecas que a gente está usando ou bibliotecas que a gente adicionou
+
+posteriormente, como também scripts para compilar, rodar e fazer algum outro tipo de coisa no nosso
+
+projeto.
+
+Então tudo vai ficar dentro desse pacote pro Jason, né?
+
+Aqui a gente tem algumas outras configurações que é somente por VS tá?
+
+Então as extensões que a gente pode adicionar no nosso projeto vai estar aqui dentro.
+
+Aqui tem um ícone que vai aparecer lá em cima da tabela Windows de RSS.
+
+Praticamente a gente quase nunca vai mexer nisso quando a gente quiser adicionar um recurso de CSS,
+
+já que é uma biblioteca que seja CDN, a gente vai adicionar aqui dentro.
+
+Mas fora isso, a gente praticamente não vai mais mexer nesse index html, né?
+
+Então aqui ele já gerou para a gente uma um app padrão, né?
+
+Que é o primeiro componente de todo todo projeto angular.
+
+Então um projeto angular vai ter esse app ponto component ponto SSS, que é a estilização, o TypeScript
+
+que vai ser a entrada de dados onde a gente vai codificar o nosso componente, né?
+
+Esse arquivo ponto spec vai ser um arquivo que todo o componente Módulo Service Diretiva Pipe que foi
+
+adicionado no nosso projeto customizado vai ter para a gente gerar testes unitários e o próprio template
+
+do nosso HTML, né?
+
+Então agora a gente vai aguardar ele.
+
+Ele finalizar a geração do nosso código para a gente poder executar e ver como que funciona.
+
+De fato, um projeto em Angular, né?
+
+Esse ponto é que geralmente ele demora um pouco, porque além dele gerar o nosso projeto, ele tem que
+
+baixar da internet todos os módulos que compõem esse projeto.
+
+Então, por exemplo, a gente tem a biblioteca RX, JS.
+
+A biblioteca JS Ele vai ter que ir lá no CDN do NPM, pegar esse projeto e adicionar numa pasta para
+
+a gente.
+
+Depois vai pegar todo o core do Angular par de rotas do Angra também vai pegar do CDN e vai baixar para
+
+a nossa máquina, né?
+
+Então, nesse ponto que ele está fazendo isso, ele está acessando um diretório na nuvem, pegando os
+
+recursos que a gente precisa e baixando para o nosso projeto.
+
+Então isso aqui ele já fez, né?
+
+Veja que ele deu alguns, alguns.
+
+Comentários aqui.
+
+Então é esse esses comentário que quer dizer que ele já foi adicionado no git, né?
+
+Então um pouco mais pra frente a gente vai também ter uma aula ali de git básico para a gente aprender
+
+como que a gente vai subir esse projeto no GitHub, como a gente vai fazer commit por request.
+
+Então é isso aí, a gente vai também ter um breve capítulo ali sobre Git e básico, então beleza.
+
+Então é aquele já, ele já inicializa o Git e já instalou nosso projeto.
+
+Então aqui, basicamente ele vai navegar para a página da pasta do ARC do projeto, então ele vai dar
+
+um CD Projeto um, então vou dar um enter aqui.
+
+Então aqui eu tem duas coisas que eu posso fazer, eu posso vim abrir ele no VSCode digitando que could
+
+pronto.
+
+Então é isso que ele vai pegar esse diretório projeto um e já vai abrindo o VSCode para mim.
+
+Como também eu posso vim aqui e digitar o comando ng serve.
+
+Digitando ng serve, ele vai pegar esse projeto que a gente acabou de criar, ele vai compilar e vai
+
+subir num servidor local para a gente executar no navegador.
+
+Então antes de fazer isso, vamos abrir que no VSCode com o cod Ponto.
+
+Ai maravilha, né?
+
+Então agora ele vai abrir o nosso projeto aqui no nível de pastas.
+
+Então ok, Então tá aqui todo o nosso projeto.
+
+Deixa eu só ver se eu consigo aumentar um pouquinho essa letra que.
+
+Aí está a maravilha.
+
+Então aqui todos aqueles arquivos que eu já comentei anteriormente, todos eles estão aqui.
+
+Então vamos lá.
+
+Aqui é um arquivo de texto e um arquivo de teste para o nosso arquivo de configurações do TypeScript
+
+aqui.
+
+De fato, são as configurações, né?
+
+Então, mais pra frente a gente pode até passar por alguns deles aqui para ver o que cada um desses
+
+dessas declarações e propriedades tem efeito dentro do TypeScript.
+
+Mas basicamente isso aqui são configurações.
+
+Beleza?
+
+Aqui o ts config geralmente é basicamente isso aqui.
+
+E quando a gente vai compilar um código e gerar um build de produção do nosso código, quais são as
+
+pastas que ele vai gerar?
+
+Então veja que ele vai compilar para um arquivo main post desse.
+
+Depois até na hora da gente fazer um debug a gente vai ver que muita coisa vai estar dentro desse main
+
+pts, porque já é um código compilado.
+
+Esse readme aqui vai ser só informações importantes do nosso projeto, como executar um projeto, como
+
+testá lo.
+
+Então basicamente é isso que depois a gente pode até customizar esse arquivo aqui e deixar do nosso
+
+jeito o pack pro Jason.
+
+Igor tinha dito Aqui tem as dependências do nosso projeto e as dependências de desenvolvedor, né?
+
+Essas dependentes de desenvolvedor elas não só não vão para produção, né?
+
+Somente essas dependências que são dependências que o projeto.
+
+Sem isso aqui o projeto não funciona, né?
+
+Então são são dependências obrigatórias no nosso projeto.
+
+O pack de ponto G ele tem basicamente como se fosse um atalho e é uma cópia do Jason.
+
+E aqui embaixo ele vai ter as informações das versões de cada pacote e os TDN de cada pacote pra ele
+
+baixar mais rapidamente depois que a gente quiser baixar as dependências novamente aqui o Angular,
+
+Jason e as configurações do nosso Angular, né?
+
+Então aqui está qual que é o Builder, né?
+
+O nome do projeto é o arquivo principal do nosso projeto, então aqui tem algumas configurações do próprio,
+
+né?
+
+Do próprio Angular, o git ignore.
+
+São arquivos que a gente não vai subir pro GitHub, então pode ser.
+
+Arquivos importantes ou arquivos que são necessários somente para desenvolvimento.
+
+Então não, não faz sentido a gente subir para o GitHub.
+
+E aqui o editor config são são configurações
+
+que no caso vão servir apenas aqui por vs code por caso.
+
+E se esse mesmo código que você tiver mais de uma pessoa trabalhar no mesmo projeto para cada pessoa,
+
+para cada codificação e estilo de texto, tamanho de fonte, não fique.
+
+Cada usuário, cada desenvolvedor codifique de um jeito e depois não gere conflito.
+
+E aqui está a pastinha, a pastinha principal do nosso projeto, onde a gente vai ter o index Hangout.
+
+Tinha falado praticamente não tem nada aqui.
+
+A única coisa que é importante desse projeto, desse arquivo para a gente é o app root, que é o componente
+
+principal da nossa aplicação e é tudo o que a gente renderizar dentro do nosso projeto vai ser renderizado
+
+dentro dessa tag app rotina do Angular, então a gente não precisa mexer em nada aqui para funcionar.
+
+O memtest vai ser quando a gente gerar o nosso projeto para produção, ele vai gerar um arquivinho desse
+
+pra gente aqui e um ícone de exemplo do próprio Angular, né, que é o icon que vai aparecer lá no navegador
+
+web sites.
+
+A gente geralmente adiciona imagens, pode adicionar algumas fontes, gifs e SVG, né?
+
+Então dentro dessa pastinha é uma pastinha de mídia.
+
+E aqui está o nosso projeto.
+
+Então, um projeto angular que acabou de nascer igual a esse.
+
+Ele tem um módulo que vai gerenciar o nosso projeto.
+
+Ele tem um componente padrão, né?
+
+Gota que o título Projeto um, né?
+
+Tem um arquivo de testes unitários, um arquivo de estilos.
+
+Tenho o template que vai ser o que a gente vai usar, vai visualizar na tela do navegador e as rotas.
+
+Se tiver múltiplos componentes ou múltiplos módulos, a gente vai querer navegar entre as páginas igual
+
+e igual.
+
+Eu dei um exemplo quando estava estudando lá sobre aspas até mostrar tela do Gmail.
+
+Então, no Gmail a gente tem uma navegação mais fluída, então a gente navega sobre aquelas abas e a
+
+gente ia trocando só o corpo da aplicação.
+
+Então nessa parte a gente vai utilizar de rotas para alterar o contexto da nossa aplicação, né?
+
+E essa pastinha que no de módulos são todos os as dependências que a gente viu, tanto de desenvolvimento
+
+como as dependências de projeto que a gente tem.
+
+Então a gente tem o próprio ângulo.
+
+O kit de desenvolvimento do Angular é o Babel, então tem muita coisa aqui dentro.
+
+Isso que a gente não vai precisar, preocupada.
+
+Então o próprio VSCode nele tem um terminal embutido no terminal que a gente vê aqui em cima.
+
+A parede só vem aqui.
+
+Então, se a gente vê é que eu, como eu, deu zoom, o menu superior sumiu e veio para cá.
+
+Mas a gente vê.
+
+A gente tem esse terminal aqui.
+
+Então, se você digitar control shift.
+
+E aspas simples.
+
+Ele vai abrir um terminal, eu vou clicar aqui.
+
+Novo terminal.
+
+Então aquele abriu para mim um novo terminal, que é o mesmo terminal daquele CPD que a gente tinha
+
+aberto, né?
+
+Aí é que agora a gente pode rodar o nosso projeto de duas formas a gente pode rodar digitando.
+
+NG serve, né?
+
+Como também a gente pode vir aqui no nosso Pact.
+
+Ponto.
+
+Jason A gente vai ver que a gente tem um script que é aqui nessa abinha de scripts, a gente vai ter
+
+aqui o start, que é a mesma coisa, ele roda e ng serve.
+
+Se a gente quiser rodar o script start, como é que a gente faz?
+
+A gente roda, a gente adiciona npm e start.
+
+E dá um enter.
+
+Então rodando npm start que é esse script aqui, ele por baixo dos panos vai estar rodando.
+
+Na verdade o NG serve.
+
+Depois a gente vai ver como que a gente gera scripts também.
+
+Então a gente pode criar o nossos próprios scripts personalizados aqui também.
+
+Então agora ele vai gerar um projeto para a gente.
+
+Ele vai gerar o build na nossa aplicação e após subir e ele já vai alocar pra gente um servidor e um
+
+servidor de páginas aqui onde a gente vai conseguir visualizar esse projeto nosso no navegador.
+
+Então aqui ele já está gerando os bandos, né?
+
+Quando ele fala esses bandos aqui, quer dizer que ele vai criar pacotes de código.
+
+Como a gente só tem um único módulo, ele vai criar apenas um pacote do nó da nossa, da nossa aplicação.
+
+Então ele vai empacotar tudo dentro de um único pacotinho que a gente chama de chunk.
+
+No final, a gente até vai ver essa palavra chunk aqui.
+
+Vamos aguardar o final da geração do nosso projeto aqui.
+
+E assim que terminar aqui a gente vai ver que ele vai alocar uma porta do servidor para a gente executar
+
+o nosso código.
+
+Por padrão, o Angular ele utiliza a porta 42 zero zero na 4200.
+
+Então beleza, terminou de gerar.
+
+Então a gente pode ver que ele gerou que os os nossos arquivos que compilados.
+
+Então está tudo pronto para a gente rodar aqui na porta 42 zero zero.
+
+Então, se a gente segurar o controle e clicar em cima desse local roxo 42 zero zero, ele já vai navegar
+
+para a gente lá pro para o navegador.
+
+Então ele vai abrir um navegador, né?
+
+Ele fez aqui e vai executar para a gente aqui no nosso projeto.
+
+Então aqui já tem o título do projeto um, o ícone que a gente acabou de ver lá.
+
+Físico Então, essa aqui é uma página padrão.
+
+Que eu amo ler traz quando a gente quer.
+
+Então por aqui a gente consegue navegar para a documentação do Angular.
+
+Martírio ver a documentação do Celli e aqui tem um guia, um passo a passo pra gente aprender, mas
+
+desenvolver no ângulo, beleza?
+
+Então pra gente certificar.
+
+De que o que a gente vai alterar aqui vai refleti la na web.
+
+A gente pode vir aqui e selecionar tudo isso aqui, né?
+
+Então, gente, pode selecionar tudo isso aqui.
+
+A única coisa que a gente não pode apagar.
+
+Até o vinho que baixa que ele vai ter esse router outlet.
+
+Então é esse router outlet é uma tag que todo componente que a gente gerar depois desse aqui vai ser
+
+renderizado aqui dentro.
+
+Então esse router outlet a gente não pode pagar a pagar, tá aí.
+
+Então a gente já tem o nosso router outlet, então só pra.
+
+Testar o nosso projeto.
+
+Vou criar um H1 na.
+
+E vou digitar aqui.
+
+Bem vindo.
+
+Ao treinamento de Angola.
+
+Então assim que eu salvar ele gera um novo novo build para a gente e já vai estar refletindo aqui na
+
+web.
+
+Então tá aqui.
+
+Bem vindo ao treinamento de Angra!
+
+Então, a partir das próximas aulas a gente vai ver muita coisa legal, Então a gente vai ver como gerar
+
+um novo componente, gerar modos, navegar entre os componentes, trocar informações de um componente,
+
+trocar informação com outro.
+
+A gente vai adicionar também o Angra Martírio no nosso projeto pra gente ter uma UAI de Angular, então
+
+vai ter bastante coisa pela frente aí pra gente aprender.
+
+Então pessoal, espero que tenham gostado dessa aula e vamos para a próxima e mais.
