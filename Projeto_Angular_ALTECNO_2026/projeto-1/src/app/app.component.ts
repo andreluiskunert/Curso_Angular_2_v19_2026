@@ -1,6 +1,6 @@
 
 
- import { Component } from '@angular/core';
+ import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
@@ -17,7 +17,7 @@ import { RouterOutlet } from '@angular/router';
 })
 
 
-export class AppComponent {
+export class AppComponent implements OnInit, OnChanges {
 
   title: string = 'ola-angular';
   nome: string = '';
@@ -27,6 +27,15 @@ export class AppComponent {
   //   console.log('Função chamada!');
   // }
   constructor() {}
+  ngOnChanges(changes: SimpleChanges): void {
+     throw new Error('Method not implemented.');
+     console.log('Component OnChanges')
+  }
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+    console.log('aqui tem OnInit')
+    this.title = 'Novo'
+  }
   //  sábado 24/012026_ de noite
   // ngIf...> usando complemento else, usamos pra exibir ou ocultar elementos tomada por decisões logicas
   // fazer de noite hoje
