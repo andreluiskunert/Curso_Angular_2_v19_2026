@@ -4,10 +4,12 @@
   <h1>bem-vindos ao treinamento de desenvolvimento Angular</h1>
 </ng-template>
 
-<!-- <button (click)="chamarFuncao()">Chamar evento</button> -->
+<button (click)="chamarFuncao()">Chamar evento</button>
 <br>
+<div class="imagem">
+  <img [src]="imgUrl" alt="Imagem ilustrativa" algin-text="center">
+</div>
 
-<img [src]="imgUrl" alt="Imagem ilustrativa" algin-text="center">
   
 
 <br><br>
@@ -31,5 +33,40 @@
   Olá pessoal, bem-vindos a mais uma aula do nosso curso de Angular.
   <!-- texto mantido -->
 </p>
+<h2> Diretivas estrutural "*ngFor":</h2>
+<h3>
+  <table>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Profissão</th>
+    <!-- <tr>
+      <td>Andre Luis Kunert</td>
+      <td>Masculino</td>
+      <td>45</td>
+      <td>Dev Full Stack</td>
+    </tr>
+     <tr>
+      <td>Antonio Luis </td>
+      <td>Masculino</td>
+      <td>43</td>
+      <td>Q.A</td>
+    </tr>
+     <tr>
+      <td>Paulo Cesar </td>
+      <td>Masculino</td>
+      <td>25</td>
+      <td>Suporte</td>
+    </tr> -->
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.sexo}}</td>
+      <td>{{cliente.idade}}</td>
+     <td>{{cliente.profissao}}</td>
+    </tr>
+  </table>
+
+</h3>
+
 
 <router-outlet></router-outlet>
