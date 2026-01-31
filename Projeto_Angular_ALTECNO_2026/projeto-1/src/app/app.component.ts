@@ -27,25 +27,29 @@ export class AppComponent implements OnInit, OnChanges {
     nome:  'Andre Luis ',
     sexo:  'Masculino',
     idade:45,
-    profissao:'Dev Full Stack'
+    profissao:'Dev Full Stack',
+    salario: '150000'
   },
    {
     nome:  'Luis Carlos',
     sexo:  'Masculino',
     idade:43,
-    profissao:'Impressor'
+    profissao:'Impressor',
+     salario: '50000'
   },
    {
     nome:  'Antonio Luis ',
     sexo:  'Masculino',
     idade:45,
-    profissao:'Q.A'
+    profissao:'Q.A',
+     salario: '10000'
   },
    {
     nome:  'Aderson Carlos',
     sexo:  'Masculino',
     idade:45,
-    profissao:'Suporte'
+    profissao:'Suporte',
+     salario: '1500'
   },
 
   ]
@@ -66,6 +70,8 @@ export class AppComponent implements OnInit, OnChanges {
   // ngIf...> usando complemento else, usamos pra exibir ou ocultar elementos tomada por decisões logicas
   // fazer de noite hoje
   // ngScwicht...> usado para tomar decisões mais complexas, com várias condições
+  //---///---
+//  Sábado, 31/01/2026_De tarde_Pipes
 
 
 
