@@ -1,16 +1,10 @@
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './componentes/home/home.component';
-import { NgModule } from '@angular/core';
-import { NovoComponent } from './componentes/novo/novo.component';
+import { Routes } from '@angular/router';
 
- export const routes: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: HomeComponent},
-    {path: 'novo', component: NovoComponent},
-    {path: 'produto', loadChildren:() => import('./features/produto/produto.module').then(m => m.ProdutoModule)}
+export const routes: Routes = [
+  {
+    path: 'produtos',
+    loadChildren: () =>
+      import('./features/produto/produto.routes')
+        .then(m => m.PRODUTO_ROUTES)
+  }
 ];
-@NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-})
-export class AppComponent {}
