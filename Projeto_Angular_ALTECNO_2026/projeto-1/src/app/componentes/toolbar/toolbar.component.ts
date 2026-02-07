@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { AppComponent } from "../../app.routes";
 
 @Component({
   selector: 'app-toolbar',
   standalone: true,
-  imports: [AppComponent],
+  imports: [],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss'
 })
