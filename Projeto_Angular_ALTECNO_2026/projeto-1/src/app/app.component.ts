@@ -2,8 +2,8 @@ import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
-import { SexoPipe } from './pipes/sexo.pipe';
-import { ToolbarComponent } from "./componentes/toolbar/toolbar.component"; // 👈 IMPORT DO PIPE
+// import { SexoPipe } from './pipes/sexo.pipe';
+// import { ToolbarComponent } from "./componentes/toolbar/toolbar.component"; // 👈 IMPORT DO PIPE
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ import { ToolbarComponent } from "./componentes/toolbar/toolbar.component"; // �
     CommonModule,
     FormsModule,
     RouterOutlet,
-    ToolbarComponent
+    // ToolbarComponent
 ],
   templateUrl: './app.component.html',
   // styleUrls: ['./app.component.css']
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    console.log('aqui tem OnInit');
+    console.log('Processando daods....');
     this.title = 'bem-vindos ao treinamento de desenvolvimento Angular';
   }
 }

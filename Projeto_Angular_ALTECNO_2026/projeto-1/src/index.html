@@ -1,33 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
-  </title>Curso Angular 2</title>
+  <title>Curso Angular 2</title>
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <style>
     marquee{
-      font: optional;
       font-weight: 200;
       background-color: aqua;
-      font-size: 46px;
+      font-size: 4.2em;
     }
+
     .rodape{
-      font: optional;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .cabeca{
+      background-color: rgb(87, 28, 226);
       font-size: 46px;
       text-align: center;
     }
+    .cabeca ul{
+      list-style: none;
+    }
+    .cabeca ul li{
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .cabeca ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    .corpo{
+      background-color: rgb(255, 255, 255);
+      font: optional;
+      font-style: italic;
+    } 
+    
+
+
   </style>
 </head>
-<body>
- <marquee> Bora La Pratica Angular</marquee>
- 
+ <header class="cabeca">
+  <n>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+ </header>
+<body class="corpo">
+  <marquee>Bora La Pratica Angular</marquee>
+
   <app-root></app-root>
+
+  <marquee>Bora La Pratica Angular</marquee>
+
 </body>
- <marquee> Bora La Pratica Angular</marquee>
-<footer>
-  <div class="rodape">
-   Desenvolvido por Andre Luis Kunert _ Técnico em Informática & Analista de TI e Sistemas_Futuro Desenvolvedor Full Stack
-  </div>
-</footer>
+  <footer>
+    <div class="rodape">
+      Desenvolvido por Andre Luis Kunert — Técnico em Informática & Analista de TI e Sistemas — Futuro Desenvolvedor Full Stack
+    </div>
+  </footer>
 </html>
