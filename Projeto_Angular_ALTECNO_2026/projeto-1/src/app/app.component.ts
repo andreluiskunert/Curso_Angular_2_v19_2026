@@ -19,9 +19,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit, OnChanges {
 
-  title: string = '';
-  nome: string = '';
+  title: string = 'ben-vindos ao treinamento de desenvolvimento Angular';
+  nome: string = 'desenvolvedor André Luis Kunert';
   imgUrl: string = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
+  frase: string = 'Angular é o melhor framework de desenvolvimento front-end do mercado';
 
  
 
