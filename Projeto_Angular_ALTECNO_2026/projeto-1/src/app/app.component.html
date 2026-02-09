@@ -10,7 +10,10 @@
 <h1>{{title}}</h1>
 <h2>Criado pelo {{nome}}</h2>
 <h3>{{frase}}</h3>
-<input type="text" [(ngModel)]="frase">
+<input type="text" [(ngModel)]="frase"><br>
+ <h1 *ngIf="frase; else mensagemPadrao"> {{frase }} </h1>
+ <ng-template #mensagemPadrao> bora estudar Angular </ng-template>
+ 
 <!-- <app-toolbar></app-toolbar> -->
  
 

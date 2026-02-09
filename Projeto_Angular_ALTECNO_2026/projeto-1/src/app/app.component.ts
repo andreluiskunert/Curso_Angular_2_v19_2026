@@ -22,7 +22,7 @@ export class AppComponent implements OnInit, OnChanges {
   title: string = 'ben-vindos ao treinamento de desenvolvimento Angular';
   nome: string = 'desenvolvedor André Luis Kunert';
   imgUrl: string = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
-  frase: string = 'Angular é o melhor framework de desenvolvimento front-end do mercado';
+  frase: string = '';
 
  
 
@@ -40,4 +40,8 @@ export class AppComponent implements OnInit, OnChanges {
     console.log('Processando daods....');
     this.title = 'bem-vindos ao treinamento de desenvolvimento Angular';
   }
+  // ngIF = "false" -> não renderiza o elemento
+  // ngIF = "true" -> renderiza o elemento
+  // <h1 *ngIf="frase"> {{frase }} </h1>
+
 }
