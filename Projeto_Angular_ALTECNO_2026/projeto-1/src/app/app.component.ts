@@ -23,6 +23,27 @@ export class AppComponent implements OnInit, OnChanges {
   nome: string = 'desenvolvedor André Luis Kunert';
   imgUrl: string = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
   frase: string = '';
+  clientes = [
+    {
+        Nome: 'André Luis',
+         Sexo: 'Masculino',
+         Idade: 45,
+         Profissao: 'Dev Full Stack',
+    },
+    {
+      Nome: 'Maria Silva',
+       Sexo: 'Feminino',
+       Idade: 30,
+       Profissao: 'Analista de Sistemas',
+  },
+  {
+    Nome: 'João Santos',
+     Sexo: 'Masculino',
+     Idade: 28,
+     Profissao: 'Desenvolvedor Front-end',
+},
+ ]
+
 
  
 

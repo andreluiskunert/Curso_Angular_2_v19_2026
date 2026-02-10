@@ -15,6 +15,23 @@
  <ng-template #mensagemPadrao> bora estudar Angular </ng-template>
  
 <!-- <app-toolbar></app-toolbar> -->
+ <h2>Tabela</h2>
+ <!-- Terça-feira,10/02/2026_de noite -->
+  <table>
+      <tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </tr>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.Nome}}</td>
+        <td>{{cliente.Sexo}}</td>
+        <td>{{cliente.Idade}}</td>
+        <td>{{cliente.Profissao}}</td>
+      </tr>
+  </table>
+  <br>
  
 
 
