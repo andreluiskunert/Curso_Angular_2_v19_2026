@@ -29,18 +29,21 @@ export class AppComponent implements OnInit, OnChanges {
          Sexo: 'Masculino',
          Idade: 45,
          Profissao: 'Dev Full Stack',
+         salario: 15000,
     },
     {
       Nome: 'Maria Silva',
        Sexo: 'Feminino',
        Idade: 30,
        Profissao: 'Analista de Sistemas',
+       salario: 8000,
   },
   {
     Nome: 'João Santos',
      Sexo: 'Masculino',
      Idade: 28,
      Profissao: 'Desenvolvedor Front-end',
+      salario: 6000,
 },
  ]
 
@@ -58,7 +61,7 @@ export class AppComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    console.log('Processando daods....');
+    console.log('Processando dados....');
     this.title = 'bem-vindos ao treinamento de desenvolvimento Angular';
   }
   // ngIF = "false" -> não renderiza o elemento

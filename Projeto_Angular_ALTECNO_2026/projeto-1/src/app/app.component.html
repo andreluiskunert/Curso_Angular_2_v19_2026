@@ -23,14 +23,25 @@
         <th>Sexo</th>
         <th>Idade</th>
         <th>Profissão</th>
+        <th>Salário</th>
       </tr>
       <tr *ngFor="let cliente of clientes">
-        <td>{{cliente.Nome}}</td>
-        <td>{{cliente.Sexo}}</td>
+        <td>{{cliente.Nome | uppercase}}</td>
+        <td>{{cliente.Sexo | lowercase}}</td>
         <td>{{cliente.Idade}}</td>
         <td>{{cliente.Profissao}}</td>
+        <td>{{cliente.salario | currency:'BRL'}}</td>
       </tr>
   </table>
+  <br>
+   <span>{{clientes | json }}</span>
+  <h3>
+   <u>  pipe </u>  explicar: O pipe é um recurso do Angular que permite transformar ou formatar dados diretamente no template.
+     Ele é representado pelo símbolo "|". No exemplo acima, o pipe "uppercase" é usado para converter o nome
+      do cliente em letras maiúsculas antes de exibi-lo na tabela. <br>
+     Existem diversos pipes disponíveis no Angular, como "date" para formatar datas, "currency" para formatar valores monetários, entre outros. Além disso, 
+    é possível criar pipes personalizados para atender a necessidades específicas de formatação de dados. 
+  </h3>
   <br>
  
 
