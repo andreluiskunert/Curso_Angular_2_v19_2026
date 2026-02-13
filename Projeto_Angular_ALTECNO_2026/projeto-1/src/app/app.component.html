@@ -17,7 +17,7 @@
 <!-- <app-toolbar></app-toolbar> -->
  <h2>Tabela</h2>
  <!-- Terça-feira,10/02/2026_de noite -->
-  <table>
+  <table class="table">
       <tr>
         <th>Nome</th>
         <th>Sexo</th>
@@ -27,7 +27,7 @@
       </tr>
       <tr *ngFor="let cliente of clientes">
         <td>{{cliente.Nome | uppercase}}</td>
-        <td>{{cliente.Sexo | lowercase}}</td>
+        <td>{{cliente.Sexo | sexo}}</td>
         <td>{{cliente.Idade}}</td>
         <td>{{cliente.Profissao}}</td>
         <td>{{cliente.salario | currency:'BRL'}}</td>
@@ -41,6 +41,16 @@
       do cliente em letras maiúsculas antes de exibi-lo na tabela. <br>
      Existem diversos pipes disponíveis no Angular, como "date" para formatar datas, "currency" para formatar valores monetários, entre outros. Além disso, 
     é possível criar pipes personalizados para atender a necessidades específicas de formatação de dados. 
+  </h3>
+  <h3>
+     <u> Criando Pipes Customizados </u>
+      Para criar um pipe personalizado no Angular, você pode seguir os seguintes passos:
+      1. Crie um arquivo para o pipe, por exemplo, "meu-pipe.pipe.ts".
+      2. Importe os módulos necessários e defina a classe do pipe, implementando a interface "PipeTransform".
+      3. Implemente o método "transform" para definir a lógica de transformação dos dados.
+      4. Registre o pipe no módulo correspondente para que    ele possa ser utilizado nos templates.
+      Exemplo de um pipe personalizado que converte um texto para letras maiúsculas;
+
   </h3>
   <br>
  
