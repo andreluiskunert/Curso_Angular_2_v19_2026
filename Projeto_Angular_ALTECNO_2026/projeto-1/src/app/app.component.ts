@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { SexoPipe } from "./pipes/sexo.pipe";
+import { ToolbarComponent } from "./componentes/toolbar/toolbar.component";
 // import { SexoPipe } from './pipes/sexo.pipe';
 // import { ToolbarComponent } from "./componentes/toolbar/toolbar.component"; // 👈 IMPORT DO PIPE
 
@@ -13,7 +14,8 @@ import { SexoPipe } from "./pipes/sexo.pipe";
     CommonModule,
     FormsModule,
     RouterOutlet,
-    SexoPipe
+    // SexoPipe,
+    ToolbarComponent
 ],
   templateUrl: './app.component.html',
   // styleUrls: ['./app.component.css']
@@ -24,29 +26,7 @@ export class AppComponent implements OnInit, OnChanges {
   nome: string = 'desenvolvedor André Luis Kunert';
   imgUrl: string = 'https://img-c.udemycdn.com/course/750x422/6269961_7859_8.jpg';
   frase: string = '';
-  clientes = [
-    {
-        Nome: 'André Luis',
-         Sexo: 'M',
-         Idade: 45,
-         Profissao: 'Dev Full Stack',
-         salario: 15000,
-    },
-    {
-      Nome: 'Maria Silva',
-       Sexo: 'F',
-       Idade: 30,
-       Profissao: 'Analista de Sistemas',
-       salario: 8000,
-  },
-  {
-    Nome: 'João Santos',
-     Sexo: 'M',
-     Idade: 28,
-     Profissao: 'Desenvolvedor Front-end',
-      salario: 6000,
-},
- ]
+
 
 
  

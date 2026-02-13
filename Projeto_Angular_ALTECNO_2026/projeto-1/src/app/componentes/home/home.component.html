@@ -1,0 +1,48 @@
+ <h2>Tabela</h2>
+ <!-- Terça-feira,10/02/2026_de noite -->
+  
+  <table class="table">
+      <tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+        <th>Salário</th>
+      </tr>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.Nome | uppercase}}</td>
+        <td>{{cliente.Sexo | sexo}}</td>
+        <td>{{cliente.Idade}}</td>
+        <td>{{cliente.Profissao}}</td>
+        <td>{{cliente.salario | currency:'BRL'}}</td>
+      </tr>
+  </table>
+  <br>
+   <span>{{clientes | json }}</span>
+  <h3>
+   <u>  pipe </u>  explicar: O pipe é um recurso do Angular que permite transformar ou formatar dados diretamente no template.
+     Ele é representado pelo símbolo "|". No exemplo acima, o pipe "uppercase" é usado para converter o nome
+      do cliente em letras maiúsculas antes de exibi-lo na tabela. <br>
+     Existem diversos pipes disponíveis no Angular, como "date" para formatar datas, "currency" para formatar valores monetários, entre outros. Além disso, 
+    é possível criar pipes personalizados para atender a necessidades específicas de formatação de dados. 
+  </h3>
+  <h3>
+     <u> Criando Pipes Customizados </u>
+      Para criar um pipe personalizado no Angular, você pode seguir os seguintes passos:
+      1. Crie um arquivo para o pipe, por exemplo, "meu-pipe.pipe.ts".
+      2. Importe os módulos necessários e defina a classe do pipe, implementando a interface "PipeTransform".
+      3. Implemente o método "transform" para definir a lógica de transformação dos dados.
+      4. Registre o pipe no módulo correspondente para que    ele possa ser utilizado nos templates.
+      Exemplo de um pipe personalizado que converte um texto para letras maiúsculas;
+
+  </h3>
+  <hr>
+  <h2>Criando Novos Componente e Adicionando Navegação</h2>
+  <h3> <p>Nesta aula de Angular foi mostrado como criar novos componentes utilizando o Angular CLI e organizar o projeto em pastas,
+     além de configurar uma barra de navegação (navbar/toolbar) com HTML e CSS para facilitar o acesso entre páginas.</p> <p>Em seguida,
+      o conteúdo explicou como criar componentes adicionais, como Home e Novo, 
+      e estruturar rotas no arquivo de roteamento para permitir a navegação entre eles dentro da aplicação. </p> <p>Também foi demonstrada a substituição do uso de links HTML tradicionais (`href`) pelo `routerLink`, que integra o sistema de rotas do Angular e permite destacar automaticamente a rota ativa com `routerLinkActive`. Por fim, a aula destacou a importância do roteamento no desenvolvimento Angular e introduziu temas futuros, como otimização com módulos e uso de guardas de rota para controle de acesso.  <p>  </p> 
+ 
+  
+  </h3>
+  <br>
