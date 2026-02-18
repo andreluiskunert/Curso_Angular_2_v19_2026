@@ -7,6 +7,8 @@ import { AfterContentInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, sig
   styleUrl: './app.scss'
 })
 export class App implements OnInit, OnChanges, DoCheck, OnDestroy , AfterContentInit{
+   frase: string = 'Curso Angular 2 v19 - 2026...bora construir um projeto incrível!';
+
   ngAfterContentInit(): void {
     throw new Error('Method not implemented.');
   }
@@ -32,4 +34,11 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy , AfterContent
   mudarTexto() {
     this.title.update(v => v + 'a');
   }
+  //  Quarta-feira, 19 de junho de 2024 - 19:52:00 h+|-
+  //  Interpolação: {{ frase() }}
+  // property binding: [innerText]="frase()"
+  imgUrl:string = 'https://cdn.hashnode.com/res/hashnode/image/upload/v1701608958772/rx0OQPPos.png';
+  // Two-way data binding: <input [(ngModel)]="frase">
+
 }
+
