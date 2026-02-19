@@ -4,5 +4,23 @@
 
 
 <h3>{{frase}}</h3>
- <input [(ngModel)]="frase">
+ <!-- <input [(ngModel)]="frase"> -->
+  <h3>Diretivas de decisão *ngf* ngSwitch:</h3>
+  <h4 *ngIf="frase; else mensagemPadrao">{{frase}}</h4>
+  <ng-template #mensagemPadrao><p>Bora Codar com Angular no FrontEnd .</p></ng-template>
+  <h3>Diretivas de repetição *ngSwitch:</h3>
+  <span [ngSwitch]="title">
+  <p *ngSwitchCase="true">
+  Esse é um parafo verdadeiro, ou seja, a condição é verdadeira.
+  </p>
+  <p *ngSwitchCase="false">
+  esse é um parafo falso, ou seja, a condição é falsa.
+  </p>
+  <p *ngSwitchDefault>
+  esse é um parafo default, ou seja, a condição não é nem verdadeira e nem falsa.
+  </p>
+  </span>
+ 
+
+    
 <router-outlet />
