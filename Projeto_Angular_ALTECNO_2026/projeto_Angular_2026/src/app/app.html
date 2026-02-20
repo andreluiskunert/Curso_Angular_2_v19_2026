@@ -1,8 +1,8 @@
-<h2>Aqui fazei todo este curso de angular   </h2>
+
 <!-- <button (click)="mudarTexto()">Clique aqui</button> -->
- <a href="https://blog.angularacademy.ca/" alt="Daqui tira a imagem"><img [src]="imgUrl" alt="Imagem" style="max-width: 300px;"></a>
+  <img [src]="imgUrl" alt="Imagem" width="100%" height="300px" style="display: block; margin: 0 auto;">
 
-
+<h2>Aqui fazei todo este curso de angular   </h2>
 <h3>{{frase}}</h3>
  <!-- <input [(ngModel)]="frase"> -->
   <h3>Diretivas de decisão *ngf* ngSwitch:</h3>
@@ -20,7 +20,21 @@
   esse é um parafo default, ou seja, a condição não é nem verdadeira e nem falsa.
   </p>
   </span>
- 
+  <hr>
+ <h3> Diretivas Estrutural *ngFor: </h3>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Profissão</th>
+ <tr *ngFor="let cliente of clientes">
+  <td>{{cliente.nome}}</td>
+  <td>{{cliente.sexo}}</td>
+  <td>{{cliente.idade}}</td>
+  <td>{{cliente.profissao}}</td>
+ </tr>
+</table>
+<hr>
 
-    
 <router-outlet />

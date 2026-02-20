@@ -39,11 +39,36 @@ export class App //implements OnInit, OnChanges, DoCheck, OnDestroy , AfterConte
   //  Quarta-feira, 19 de junho de 2024 - 19:52:00 h+|-
   //  Interpolação: {{ frase() }}
   // property binding: [innerText]="frase()"
-  imgUrl:string = 'https://cdn.hashnode.com/res/hashnode/image/upload/v1701608958772/rx0OQPPos.png';
+  imgUrl:string = 'https://img-c.udemycdn.com/course/240x135/6269961_7859_8.jpg';
   // Two-way data binding: <input [(ngModel)]="frase">
 // ---//
 // quinta-feira,19/02/2026 _de noite
 // ngIf: *ngIf="frase"
-
+// -//
+clientes =[
+  {
+    nome: 'Andre Luis',
+    sexo: 'Masculino',
+    idade: 43,  
+    profissao: 'Desenvolvedor Full Stack'
+  }, 
+   {
+    nome: 'Antonio Carlos',
+    sexo: 'Masculino',
+    idade: 35,  
+    profissao: 'Desenvolvedor Full Stack'
+  }, 
+   {
+    nome: 'Alison Silva',
+    sexo: 'Masculino',
+    idade: 25,  
+    profissao: 'Desenvolvedor Front-end'
+  }, 
+   {
+    nome: 'Andre Luis',
+    sexo: 'Masculino',
+    idade: 30,  
+    profissao: 'Desenvolvedor Full Stack'
+  }, 
+]
 }
-
