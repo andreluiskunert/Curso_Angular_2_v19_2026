@@ -50,25 +50,29 @@ clientes =[
     nome: 'Andre Luis',
     sexo: 'Masculino',
     idade: 43,  
-    profissao: 'Desenvolvedor Full Stack'
+    profissao: 'Desenvolvedor Full Stack',
+    salario: 150000.00
   }, 
    {
     nome: 'Antonio Carlos',
     sexo: 'Masculino',
     idade: 35,  
-    profissao: 'Desenvolvedor Full Stack'
+    profissao: 'Desenvolvedor Full Stack',
+    salario: 120000.00
   }, 
    {
     nome: 'Alison Silva',
     sexo: 'Masculino',
     idade: 25,  
-    profissao: 'Desenvolvedor Front-end'
+    profissao: 'Desenvolvedor Front-end',
+    salario: 90000.00
   }, 
    {
-    nome: 'Andre Luis',
+    nome: 'Luis Antônio',
     sexo: 'Masculino',
     idade: 30,  
-    profissao: 'Desenvolvedor Full Stack'
+    profissao: 'Q.A. Analyst',
+    salario: 12000.00
   }, 
 ]
 }

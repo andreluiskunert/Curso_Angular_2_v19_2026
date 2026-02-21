@@ -27,14 +27,20 @@
     <th>Nome</th>
     <th>Sexo</th>
     <th>Idade</th>
-    <th>Profissão</th>
+    <th>Profissão</th> <br>
+     <th>Salário</th> 
  <tr *ngFor="let cliente of clientes">
-  <td>{{cliente.nome}}</td>
+  <td>{{cliente.nome | uppercase}}</td>
   <td>{{cliente.sexo}}</td>
-  <td>{{cliente.idade}}</td>
-  <td>{{cliente.profissao}}</td>
+  <td>{{cliente.idade}}</td> 
+  <td>{{cliente.profissao}}</td> <br>
+  <td>{{cliente.salario | currency}}</td>
+  <!-- parei aqui  -->
  </tr>
 </table>
+<hr>
+<h3> Pipes em Angular: </h3>
+<span> {{clientes | json}}</span>
 <hr>
 
 <router-outlet />
