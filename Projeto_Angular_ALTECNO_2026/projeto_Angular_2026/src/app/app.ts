@@ -45,34 +45,5 @@ export class App //implements OnInit, OnChanges, DoCheck, OnDestroy , AfterConte
 // quinta-feira,19/02/2026 _de noite
 // ngIf: *ngIf="frase"
 // -//
-clientes =[
-  {
-    nome: 'Andre Luis',
-    sexo: 'm',
-    idade: 43,  
-    profissao: 'Desenvolvedor Full Stack',
-    salario: 150000.00
-  }, 
-   {
-    nome: 'Antonio Carlos',
-    sexo: 'm',
-    idade: 35,  
-    profissao: 'Desenvolvedor Full Stack',
-    salario: 120000.00
-  }, 
-   {
-    nome: 'Aline Silva',
-    sexo: 'f',
-    idade: 25,  
-    profissao: 'Desenvolvedor Front-end',
-    salario: 90000.00
-  }, 
-   {
-    nome: 'Luis Antônio',
-    sexo: 'm',
-    idade: 30,  
-    profissao: 'Q.A. Analyst',
-    salario: 12000.00
-  }, 
-]
+
 }

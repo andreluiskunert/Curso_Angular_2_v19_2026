@@ -1,0 +1,30 @@
+<table class="tabela-clientes">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Idade</th>
+      <th>Profissão</th>
+      <th>Salário</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let cliente of clientes; let i = index">
+      <td>{{ cliente.nome | uppercase }}</td>
+      <td>{{ cliente.sexo | sexo }}</td>
+      <td>{{ cliente.idade }}</td>
+      <td>{{ cliente.profissao }}</td>
+      <td>{{ cliente.salario | currency:'BRL':'symbol':'1.2-2' }}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h3> Pipes em Angular: </h3>
+<span> {{clientes | json}}</span>
+<hr>
+<h3>Criação de Pipes</h3>
+<h4>
+  Demonstrar na prática a criação de um pipe personalizado para formatar o nome do cliente, exibindo apenas as iniciais do nome e do sobrenome. 
+  Por exemplo, "Andre Luis" seria exibido como "A. L.".
+</h4>

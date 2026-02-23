@@ -1,24 +1,21 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { FormsModule } from '@angular/forms';
-import { SexoPipe } from './pipes/sexo-pipe';
+import { AppRoutingModule } from './app-routing-module';
+import { ToolbarComponent } from './toolbar/toolbar';
 
 @NgModule({
   declarations: [
     App,
-    SexoPipe
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    FormsModule,
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
