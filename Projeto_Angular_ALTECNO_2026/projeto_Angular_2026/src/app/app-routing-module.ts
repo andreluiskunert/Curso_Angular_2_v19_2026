@@ -4,7 +4,8 @@ import { HomeComponent } from './componentes/home/home';
 import { NovoComponent } from './componentes/novo/novo'; // <- ajuste o nome aqui
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'novo', component: NovoComponent }, // <- e aqui
 ];
 

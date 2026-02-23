@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SexoPipe } from '../../shared/pipes/sexo.pipe';
+import { CommonModule } from "@angular/common";
+import { SexoPipe } from "../../pipes/sexo.pipe";
 
+styleUrls: ['./home.component.scss']
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -10,31 +10,12 @@ import { SexoPipe } from '../../shared/pipes/sexo.pipe';
     SexoPipe
   ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  // ...
+}
 
-  clientes = [
-    {
-      Nome: 'André Luis',
-      Sexo: 'M',
-      Idade: 45,
-      Profissao: 'Dev Full Stack',
-      salario: 15000,
-    },
-    {
-      Nome: 'Maria Silva',
-      Sexo: 'F',
-      Idade: 30,
-      Profissao: 'Analista de Sistemas',
-      salario: 8000,
-    },
-    {
-      Nome: 'João Santos',
-      Sexo: 'M',
-      Idade: 28,
-      Profissao: 'Desenvolvedor Front-end',
-      salario: 6000,
-    }
-  ];
+function Component(arg0: { selector: string; standalone: boolean; imports: (typeof CommonModule | typeof SexoPipe)[]; templateUrl: string; styleUrls: string[]; }): (target: typeof HomeComponent) => void | typeof HomeComponent {
+  throw new Error("Function not implemented.");
 }
