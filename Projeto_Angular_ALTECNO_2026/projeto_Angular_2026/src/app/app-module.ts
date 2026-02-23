@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
 
 import { App } from './app';
+import { ToolbarComponent } from './componentes/toolbar/toolbar';
 import { AppRoutingModule } from './app-routing-module';
-import { ToolbarComponent } from './toolbar/toolbar';
 
 @NgModule({
   declarations: [
@@ -13,9 +12,9 @@ import { ToolbarComponent } from './toolbar/toolbar';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
-  bootstrap: [App],
+  providers: [],
+  bootstrap: [App]
 })
 export class AppModule {}

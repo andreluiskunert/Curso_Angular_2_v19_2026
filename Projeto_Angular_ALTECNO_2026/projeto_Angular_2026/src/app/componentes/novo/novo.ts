@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-novo',
   standalone: false,
   templateUrl: './novo.html',
-  styleUrl: './novo.scss',
+  styleUrls: ['./novo.scss'], // pode manter styleUrl se sua versão suportar
 })
-export class Novo {
-
+export class NovoComponent {
 }
