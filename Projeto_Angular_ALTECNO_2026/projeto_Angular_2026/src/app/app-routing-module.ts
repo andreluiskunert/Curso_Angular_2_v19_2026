@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'novo', component: NovoComponent }, // <- e aqui
+  // lazy loading do módulo de produto
+  {path: 'produto', loadChildren: () => import('./features/produto/produto-module').then(m => m.ProdutoModule)}
 ];
 
 @NgModule({
