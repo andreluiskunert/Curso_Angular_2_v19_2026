@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Listagem } from './listagem/listagem';
+import { NovoComponent } from '../../componentes/novo/novo';
+import { Produto } from './produto';
 
 const routes: Routes = [
   {path: '', redirectTo: 'listagem', pathMatch: 'full'},
-  {path: 'listagem', loadComponent: () => import('./listagem/listagem').then(m => m.Listagem)},
-  {path: 'novo-produto', loadComponent: () => import('./novo-produto/novo-produto').then(m => m.NovoProduto)},
+  {path: 'listagem', component: Listagem},
+  {path: 'novo-produto', component: Produto},
 ];
 
 @NgModule({

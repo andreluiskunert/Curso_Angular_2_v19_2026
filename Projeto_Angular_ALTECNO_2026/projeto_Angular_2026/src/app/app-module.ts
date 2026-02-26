@@ -5,14 +5,18 @@ import { App } from './app';
 import { ToolbarComponent } from './componentes/toolbar/toolbar';
 import { AppRoutingModule } from './app-routing-module';
 
+import { HomeComponent } from './componentes/home/home'; // standalone
+
 @NgModule({
   declarations: [
     App,
     ToolbarComponent,
+    // HomeComponent NÃO fica aqui
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeComponent, // ✅ standalone entra aqui
   ],
   providers: [],
   bootstrap: [App]

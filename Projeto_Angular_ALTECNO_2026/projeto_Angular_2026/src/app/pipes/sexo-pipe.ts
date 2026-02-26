@@ -2,17 +2,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'sexo',
-  standalone: false,
+  standalone: true
 })
 export class SexoPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    if (value === 'm') {
-      return 'Masculino';
-    } else if (value === 'f') {
-      return 'Feminino';
-    }
-    return value;
+  transform(valor: string): string {
+    if (valor === 'm') return 'Masculino';
+    if (valor === 'f') return 'Feminino';
+    return valor;
   }
-
 }
