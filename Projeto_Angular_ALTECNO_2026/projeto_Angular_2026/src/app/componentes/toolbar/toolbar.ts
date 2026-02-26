@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 @Component({
   selector: 'app-toolbar',
-  standalone: false,
+  standalone: true,
+  imports: [MatToolbarModule, MatIconModule],
   templateUrl: './toolbar.html',
-  styleUrls: ['./toolbar.scss'],
+  styleUrl: './toolbar.scss',
 })
 export class ToolbarComponent {}
