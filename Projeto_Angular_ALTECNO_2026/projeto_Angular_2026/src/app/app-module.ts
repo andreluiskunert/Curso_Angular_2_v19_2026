@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 
-import { App } from './app';
+import { App } from './app'; // (se o teu componente raiz se chama App)
+import { AppRoutingModule } from './app-routing-module';
 import { ToolbarComponent } from './componentes/toolbar/toolbar';
 
 @NgModule({
   declarations: [
-    App,
-    // ❌ ToolbarComponent NÃO fica aqui
-    
+    App, // componente raiz (não é standalone)
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule,
-    ToolbarComponent, // ✅ standalone entra aqui
+    AppRoutingModule,     // ✅ rotas aqui
+    ToolbarComponent,     // ✅ standalone aqui
   ],
   bootstrap: [App],
 })

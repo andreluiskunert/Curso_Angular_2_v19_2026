@@ -1,5 +1,3 @@
-<!-- <button (click)="mudarTexto()">Clique aqui</button> -->
-
 <img
   [src]="imgUrl"
   alt="Imagem"
@@ -18,37 +16,12 @@
 </ng-template>
 
 <h3>Diretivas de decisão *ngSwitch:</h3>
-
-<!-- Se title for BOOLEAN (true/false), isso funciona -->
 <span [ngSwitch]="title">
-  <p *ngSwitchCase="true">
-    Esse é um parágrafo verdadeiro, ou seja, a condição é verdadeira.
-  </p>
-
-  <p *ngSwitchCase="false">
-    Esse é um parágrafo falso, ou seja, a condição é falsa.
-  </p>
-
-  <p *ngSwitchDefault>
-    Esse é um parágrafo default, ou seja, a condição não é nem verdadeira e nem falsa.
-  </p>
+  <p *ngSwitchCase="true">Condição verdadeira.</p>
+  <p *ngSwitchCase="false">Condição falsa.</p>
+  <p *ngSwitchDefault>Condição default.</p>
 </span>
 
 <hr>
-
 <h3>Diretivas Estrutural *ngFor:</h3>
-
-<app-toolbar></app-toolbar>
-
-<hr>
-
-<h3>Criação de componentes e adicionar a navegação</h3>
-<h4>Estará sobre a tabela ....</h4>
-
-<hr>
-<h2> Tipo de Modulos </h2>
-<hr>
-<h2>Angular Material</h2>
-
-
-<router-outlet></router-outlet>
+<!-- sua tabela ou lista aqui -->

@@ -1,21 +1,23 @@
 <header>
-    <div class="topnav">
-        <a routerLink="home" routerLinkActive="active">Home</a>
-        <a routerLink="novo" routerLinkActive="active">Novo</a>
-       <a routerLink="produto" routerLinkActive="active">Produto</a>
-
-    </div>
+  <div class="topnav">
+   <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+<a routerLink="/novo" routerLinkActive="active">Novo</a>
+<a routerLink="/produto" routerLinkActive="active">Produto</a>
+  </div>
 </header>
- <mat-toolbar color="primary">
-   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu">
-    <mat-icon> Menu</mat-icon>
-   </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon> favorite</mat-icon>
-   </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button share heart icon">
-    <mat-icon> share</mat-icon>
-   </button>
 
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
 
- </mat-toolbar>
+  <span style="flex: 1 1 auto"></span>
+
+  <button mat-icon-button aria-label="Favorito">
+    <mat-icon>favorite</mat-icon>
+  </button>
+
+  <button mat-icon-button aria-label="Compartilhar">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
