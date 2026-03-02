@@ -1,5 +1,17 @@
 <h1>Aqui teremos um projeto de angular</h1>
 <h2>alterado {{title}}</h2>
-<button (click)="mudarTexto()"></button>
+
+<!-- <button (click)="mudarTexto()"></button> -->
+ <hr>
+ <h2>4 Tipos de data Binding:</h2>
+<h3>1ª Interploação ->  {{frase}};<p></p>
+    2ª Property bing -> <img [src]="imgUrl" height="75px" width="150px"> <br>
+    3ª Event Bingind -> <button (click)="chamarFuncao()">Chamar Evento </button> <br>
+    4ª Two-way databinding -> 
+  <input [(ngModel)]="MaisFrase" />
+<p>{{ MaisFrase }}</p>
+<hr>
+
+</h3>
 
 <router-outlet />
