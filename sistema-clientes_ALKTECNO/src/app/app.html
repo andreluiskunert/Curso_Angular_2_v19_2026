@@ -11,7 +11,33 @@
   <input [(ngModel)]="MaisFrase" />
 <p>{{ MaisFrase }}</p>
 <hr>
+</h3>
+<h2> Diretivas decisão *ng* ngSwitch: </h2>
+<h3>
+<p> São  estruturas de uma condição Lógica: else, if else...</p>
+<h2 *ngIf="fraseIF; else mensagemPadrao">{{fraseIF}}</h2>
+<ng-template #mensagemPadrao>
+ <h1>bem ao treinamaneto de Angular</h1>
+</ng-template>
+<span [ngSwitch]="fraseIF">
+  <p *ngSwitchCase="'Bora Estudar Estruturas em Angular'">
+    Essa frase é a principal
+  </p>
+
+  <p *ngSwitchCase="'Outra frase'">
+    Essa é outra frase
+  </p>
+
+  <p *ngSwitchDefault>
+    Nenhum caso bateu
+  </p>
+</span>
+<span [ngSwitch]="fraseIF"> <p *ngSwitchCase="true"> Essa frase verdadeiro </p> 
+  <p *ngSwitchCase="false"> Essa frase falsa </p> <p *ngSwitchDefault> Essa frase Default </p>
+ </span>
 
 </h3>
+
+
 
 <router-outlet />
