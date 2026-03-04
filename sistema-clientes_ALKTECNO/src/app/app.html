@@ -37,7 +37,26 @@
  </span>
 
 </h3>
+<hr>
+<h2>Diretivas  Estruturais: </h2>
+<h3>
+  <p> O mais comum é o *ngFor:</p> 
+  § informações: <br>
+  <table>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Profissão</th>
+    
+   <tr *ngFor="let cliente of clientes">
+     <td>{{cliente.nome}}</td>
+     <td>{{cliente.sexo}}</td>
+     <td>{{cliente.idade}}</td>
+     <td>{{cliente.profissao}}</td>
+   </tr>
+  </table>
 
+</h3>
 
 
 <router-outlet />
