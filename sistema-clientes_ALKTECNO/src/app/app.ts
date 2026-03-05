@@ -19,27 +19,32 @@ export class App {
   clientes = [
     {
       nome: 'André Luis',
-      sexo: 'Masculino',
+      sexo: 'm',
       idade: 43,
-      profissao: 'Dev Full Stack'
+      profissao: 'Dev Full Stack',
+      salario: 150000,
     },
        {
       nome: 'Luis Carlos',
-      sexo: 'Masculino',
+      sexo: 'm',
       idade: 43,
-      profissao: 'Q.A'
+      profissao: 'Q.A',
+      salario: 140000,
+
     },
        {
       nome: 'Antônio Luis',
-      sexo: 'Masculino',
+      sexo: 'm',
       idade: 43,
-      profissao: 'Dev Full Stack Python'
+      profissao: 'Dev Full Stack Python',
+        salario: 155000,
     },
        {
       nome: 'Ana Luisa',
-      sexo: 'Feminino',
+      sexo: 'F',
       idade: 35,
-      profissao: 'Dev Full Stack Java'
+      profissao: 'Dev Full Stack Java',
+        salario: 150000,
     },
 
   ]
