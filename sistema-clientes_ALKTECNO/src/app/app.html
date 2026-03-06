@@ -51,7 +51,7 @@
     
    <tr *ngFor="let cliente of clientes">
      <td>{{cliente.nome | uppercase}}</td>
-     <td>{{cliente.sexo | lowercase}}</td>
+     <td>{{cliente.sexo | sexo }}</td>
      <td>{{cliente.idade}}</td>
      <td>{{cliente.profissao}}</td>
      <td>{{cliente.salario | currency}}</td>
@@ -64,6 +64,17 @@
   Obs.: esta na Tabela acima; <br>
   <span>{{clientes | json}}</span>
 </h3>
+<hr>
+<h2> Pipes na pratica</h2>
+<h3>
+ Obs.: esta na Tabela acima; <br>
+</h3>
+<hr>
+<h2>Criando novo Componente e Adicionando navegação:</h2>
+<app-toobar></app-toobar>
+<h3>
 
+</h3>
+<hr>
 
 <router-outlet />
