@@ -8,7 +8,7 @@ import { Toobar } from './componentes/toobar/toobar';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule, SexoPipe, Toobar],
+  imports: [RouterOutlet, FormsModule, CommonModule, Toobar],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -19,36 +19,6 @@ export class App {
   MaisFrase = '';
   fraseIF = 'Bora Estudar Estruturas em Angular';
 
-  clientes = [
-    {
-      nome: 'André Luis',
-      sexo: 'm',
-      idade: 43,
-      profissao: 'Dev Full Stack',
-      salario: 150000,
-    },
-    {
-      nome: 'Luis Carlos',
-      sexo: 'm',
-      idade: 43,
-      profissao: 'Q.A',
-      salario: 140000,
-    },
-    {
-      nome: 'Antônio Luis',
-      sexo: 'm',
-      idade: 43,
-      profissao: 'Dev Full Stack Python',
-      salario: 155000,
-    },
-    {
-      nome: 'Ana Luisa',
-      sexo: 'F',
-      idade: 35,
-      profissao: 'Dev Full Stack Java',
-      salario: 150000,
-    },
-  ];
 
   chamarFuncao() {
     console.log('Este é um click');

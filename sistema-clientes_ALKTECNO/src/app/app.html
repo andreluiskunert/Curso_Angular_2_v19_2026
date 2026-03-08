@@ -1,80 +1,17 @@
 <h1>Aqui teremos um projeto de angular</h1>
-<h2>alterado {{title}}</h2>
+<h2>alterado {{ title }}</h2>
 
-<!-- <button (click)="mudarTexto()"></button> -->
- <hr>
- <h2>4 Tipos de data Binding:</h2>
-<h3>1ª Interploação ->  {{frase}};<p></p>
-    2ª Property bing -> <img [src]="imgUrl" height="75px" width="150px"> <br>
-    3ª Event Bingind -> <button (click)="chamarFuncao()">Chamar Evento </button> <br>
-    4ª Two-way databinding -> 
-  <input [(ngModel)]="MaisFrase" />
-<p>{{ MaisFrase }}</p>
 <hr>
-</h3>
-<h2> Diretivas decisão *ng* ngSwitch: </h2>
-<h3>
-<p> São  estruturas de uma condição Lógica: else, if else...</p>
-<h2 *ngIf="fraseIF; else mensagemPadrao">{{fraseIF}}</h2>
-<ng-template #mensagemPadrao>
- <h1>bem ao treinamaneto de Angular</h1>
-</ng-template>
-<span [ngSwitch]="fraseIF">
-  <p *ngSwitchCase="'Bora Estudar Estruturas em Angular'">
-    Essa frase é a principal
-  </p>
 
-  <p *ngSwitchCase="'Outra frase'">
-    Essa é outra frase
-  </p>
+<nav>
+  <a routerLink="/home">Home</a> |
+  <a routerLink="/sobre">Sobre</a>
+</nav>
 
-  <p *ngSwitchDefault>
-    Nenhum caso bateu
-  </p>
-</span>
-<span [ngSwitch]="fraseIF"> <p *ngSwitchCase="true"> Essa frase verdadeiro </p> 
-  <p *ngSwitchCase="false"> Essa frase falsa </p> <p *ngSwitchDefault> Essa frase Default </p>
- </span>
+<hr>
 
-</h3>
-<hr>
-<h2>Diretivas  Estruturais: </h2>
-<h3>
-  <p> O mais comum é o *ngFor:</p> 
-  § informações: <br>
-  <table>
-    <th>Nome</th>
-    <th>Sexo</th>
-    <th>Idade</th>
-    <th>Profissão</th>
-    <th>salario / Ano </th>
-    
-   <tr *ngFor="let cliente of clientes">
-     <td>{{cliente.nome | uppercase}}</td>
-     <td>{{cliente.sexo | sexo }}</td>
-     <td>{{cliente.idade}}</td>
-     <td>{{cliente.profissao}}</td>
-     <td>{{cliente.salario | currency}}</td>
-   </tr>
-  </table>
-</h3>
-<hr>
-<h2> Pipes em Angular:</h2>
-<h3>
-  Obs.: esta na Tabela acima; <br>
-  <span>{{clientes | json}}</span>
-</h3>
-<hr>
-<h2> Pipes na pratica</h2>
-<h3>
- Obs.: esta na Tabela acima; <br>
-</h3>
-<hr>
-<h2>Criando novo Componente e Adicionando navegação:</h2>
 <app-toobar></app-toobar>
-<h3>
 
-</h3>
 <hr>
 
-<router-outlet />
+<router-outlet></router-outlet>

@@ -1,0 +1,75 @@
+<h2>4 Tipos de data Binding:</h2>
+
+<p>1ª Interpolação -> {{ frase }}</p>
+
+<p>2ª Property binding -></p>
+<img [src]="imgUrl" height="75px" width="150px">
+
+<p>3ª Event Binding -></p>
+<button (click)="chamarFuncao()">Chamar Evento</button>
+
+<p>4ª Two-way databinding -></p>
+<input [(ngModel)]="MaisFrase" />
+<p>{{ MaisFrase }}</p>
+
+<hr>
+
+<h2>Diretivas decisão *ngIf / ngSwitch:</h2>
+
+<p>São estruturas de uma condição lógica</p>
+
+<h2 *ngIf="fraseIF; else mensagemPadrao">{{ fraseIF }}</h2>
+
+<ng-template #mensagemPadrao>
+  <h1>Bem-vindo ao treinamento de Angular</h1>
+</ng-template>
+
+<span [ngSwitch]="fraseIF">
+  <p *ngSwitchCase="'Bora Estudar Estruturas em Angular'">
+    Essa frase é a principal
+  </p>
+
+  <p *ngSwitchCase="'Outra frase'">
+    Essa é outra frase
+  </p>
+
+  <p *ngSwitchDefault>
+    Nenhum caso bateu
+  </p>
+</span>
+
+<hr>
+
+<h2>Diretivas Estruturais:</h2>
+
+<p>O mais comum é o *ngFor:</p>
+<p>Informações:</p>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Profissão</th>
+    <th>Salário / Ano</th>
+  </tr>
+
+  <tr *ngFor="let cliente of clientes">
+    <td>{{ cliente.nome | uppercase }}</td>
+    <td>{{ cliente.sexo }}</td>
+    <td>{{ cliente.idade }}</td>
+    <td>{{ cliente.profissao }}</td>
+    <td>{{ cliente.salario | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>Pipes em Angular:</h2>
+<p>Obs.: está na tabela acima;</p>
+<span>{{ clientes | json }}</span>
+
+<hr>
+
+<h2>Pipes na prática</h2>
+<p>Obs.: está na tabela acima;</p>
