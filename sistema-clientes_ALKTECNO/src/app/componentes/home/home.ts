@@ -15,16 +15,16 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-home',
   standalone: true,
   imports: [
-    NgIf,
-    NgSwitch,
-    NgSwitchCase,
-    NgSwitchDefault,
-    NgFor,
-    UpperCasePipe,
-    CurrencyPipe,
-    JsonPipe,
-    FormsModule
-  ],
+  NgIf,
+  NgSwitch,
+  NgSwitchCase,
+  NgSwitchDefault,
+  NgFor,
+  UpperCasePipe,
+  CurrencyPipe,
+  JsonPipe,
+  FormsModule
+],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -33,6 +33,8 @@ export class Home {
   imgUrl = 'https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif';
   MaisFrase = '';
   fraseIF = 'Bora Estudar Estruturas em Angular';
+
+  mostrarConteudo = false;
 
   clientes = [
     {
@@ -67,5 +69,9 @@ export class Home {
 
   chamarFuncao() {
     alert('Evento chamado com sucesso!');
+  }
+
+  toggleConteudo() {
+    this.mostrarConteudo = !this.mostrarConteudo;
   }
 }
