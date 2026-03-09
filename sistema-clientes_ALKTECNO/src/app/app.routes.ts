@@ -11,6 +11,7 @@ export const routes: Routes = [
 
   { path: 'sobre', component: Novo },
 
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home' },
+  {path:'produto', loadChildren: () =>import('./features/produto/produto-module').then(m => m.ProdutoRoutingModule)}
 
 ];
