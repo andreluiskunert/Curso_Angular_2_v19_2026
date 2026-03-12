@@ -1,0 +1,21 @@
+.active {
+    background-color: rgb(138, 228, 138);
+    color: #fff;
+}
+.example-spacer{
+    flex: 1 1 auto;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

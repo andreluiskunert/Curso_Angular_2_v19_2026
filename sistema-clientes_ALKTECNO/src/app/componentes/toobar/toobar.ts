@@ -16,8 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule
   ],
   templateUrl: './toobar.html',
-  styleUrl: './toobar.css'
+  styleUrl: './toobar.scss'
 })
 export class Toobar {
-
+  title = 'projeto1';
 }
