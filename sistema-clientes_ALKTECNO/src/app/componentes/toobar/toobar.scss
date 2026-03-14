@@ -19,3 +19,16 @@ ul {
     margin: 0;
     padding: 0;
 }
+// sexta-feira, 13/03
+.nav-caption {
+    display: inline-block;
+    padding-left: 5px;
+}
+.active{
+    a{
+        color: #fff;
+    }
+}
+a:hover , a:active{
+    color: lightgray;
+}
