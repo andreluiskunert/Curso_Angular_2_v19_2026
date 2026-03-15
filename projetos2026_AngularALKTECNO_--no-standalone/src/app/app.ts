@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,19 +7,26 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
-export class App implements OnInit, OnChanges {
+export class App implements OnInit, OnChanges, DoCheck {
   title = 'Angular_2026';
 
   constructor() {
-    console.log('componentes de construtor...');
-  } 
-  // Fazer de noite
+    console.log('componente no construtor...');
+  }
+
+  ngDoCheck(): void {
+    console.log('ngDoCheck executado...');
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
-    throw new Error('Method not implemented.');
-    console.log('bora ')
+    console.log('ngOnChanges executado...', changes);
   }
 
   ngOnInit(): void {
     console.log('componente iniciado...');
+  }
+
+  mudarTexto() {
+    this.title += '6';
   }
 }
