@@ -1,4 +1,21 @@
 <h1>Bora codar com Angular_2026</h1>
 <h2>{{ title }}</h2>
+
 <button (click)="mudarTexto()">Mudar texto</button>
+
+<hr>
+
+<h2>Tipos de Data Binding</h2>
+
+<p>4 tipos de Data Binding:</p>
+<ol>
+  <li>Interpolação → <code>{{ title }}</code></li>
+  <li>Property Binding → <img [src]="imgUrl" alt="Imagem Angular" width="300"></li>
+  <li>Event Binding → <code>(click)="mudarTexto()"</code></li>
+  <li>Two-Way Binding → <code>[(ngModel)]="frase"</code></li>
+</ol>
+
+<input [(ngModel)]="frase" placeholder="Digite algo">
+<p>Você digitou: {{ frase }}</p>
+
 <router-outlet></router-outlet>

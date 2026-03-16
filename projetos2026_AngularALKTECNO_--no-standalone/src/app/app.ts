@@ -1,31 +1,41 @@
-import { AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import {
+  AfterContentInit, AfterViewChecked, AfterViewInit,
+  Component, DoCheck, OnChanges, OnDestroy, OnInit, SimpleChanges
+} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
-export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentInit, AfterViewInit, AfterViewChecked {
-  title = 'Angular_2026';
+export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
+  AfterContentInit, AfterViewInit, AfterViewChecked {
+
+  title = 'Bem vindo ao Treinamento Web com Angular_2026';
+  frase = '';
+  imgUrl = 'https://miro.medium.com/v2/resize:fit:1400/1*m4iKxbr4ecKNiIZ9zl37Ag@2x.jpeg';
 
   constructor() {
-    console.log('componente no construtor...');
+    console.log('Componente no construtor...');
   }
+
   ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-    console.log('Component AfterViewInit')
+    console.log('Component AfterViewInit');
   }
+
   ngAfterViewChecked(): void {
-    throw new Error('Method not implemented.');
+    console.log('Component AfterViewChecked');
   }
+
   ngAfterContentInit(): void {
-    throw new Error('Method not implemented.');
+    console.log('Component AfterContentInit');
   }
+
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-    console.log('Estou...')
+    console.log('Componente destruído...');
   }
 
   ngDoCheck(): void {
@@ -37,7 +47,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentI
   }
 
   ngOnInit(): void {
-    console.log('componente iniciado...');
+    console.log('Componente iniciado...');
   }
 
   mudarTexto() {
