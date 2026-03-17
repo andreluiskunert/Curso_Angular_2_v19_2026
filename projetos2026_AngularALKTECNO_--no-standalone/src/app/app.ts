@@ -1,13 +1,22 @@
 import {
-  AfterContentInit, AfterViewChecked, AfterViewInit,
-  Component, DoCheck, OnChanges, OnDestroy, OnInit, SimpleChanges
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  Component,
+  DoCheck,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  standalone: true,
+  imports: [RouterOutlet, FormsModule, CommonModule],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
@@ -17,6 +26,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   title = 'Bem vindo ao Treinamento Web com Angular_2026';
   frase = '';
   imgUrl = 'https://miro.medium.com/v2/resize:fit:1400/1*m4iKxbr4ecKNiIZ9zl37Ag@2x.jpeg';
+  work!: '';
 
   constructor() {
     console.log('Componente no construtor...');
@@ -51,6 +61,6 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   }
 
   mudarTexto() {
-    this.title += '6';
+    this.title += ' 6';
   }
 }

@@ -18,4 +18,14 @@
 <input [(ngModel)]="frase" placeholder="Digite algo">
 <p>Você digitou: {{ frase }}</p>
 
+<hr>
+
+<h2>Diretivas de decisão: *ngIf e *ngSwitch</h2>
+
+<p>1ª diretiva: *ngIf</p>
+<h4 *ngIf=" work; else mensagemPadrao">{{  work }}</h4>
+<ng-template #mensagemPadrao>
+  <h1>Estamos Codando em Angular </h1>
+</ng-template>
+
 <router-outlet></router-outlet>
