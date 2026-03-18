@@ -22,10 +22,25 @@
 
 <h2>Diretivas de decisão: *ngIf e *ngSwitch</h2>
 
-<p>1ª diretiva: *ngIf</p>
+<h4>1ª diretiva: *ngIf</h4>
 <h4 *ngIf=" work; else mensagemPadrao">{{  work }}</h4>
 <ng-template #mensagemPadrao>
-  <h1>Estamos Codando em Angular </h1>
+  <h3>Estamos Codando em Angular </h3>
 </ng-template>
+<!-- Quarta-feira,18/03/2026_De noite -->
+ <h4>2ª Diretiva *ngSwicht:</h4>
+<span [ngSwitch]="title">
+<p *ngSwitchCase="true">
+ Esse paragrafo Verdadeiro
+</p>
+<p *ngSwitchCase="false">
+ Esse paragrafo Falso
 
+
+</p>
+<p *ngSwitchDefault>
+ Esse paragrafo Default
+
+</p>
+</span>
 <router-outlet></router-outlet>
