@@ -63,4 +63,34 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   mudarTexto() {
     this.title += ' 6';
   }
+  clientes =[
+    {
+      nome: 'André Luis ',
+      Idade: 43,
+      Sexo: 'Masculino',
+      Profissao: 'Desenvoledor Full Stack Java+AI ',
+      Salario: 1750000
+    },
+       {
+      nome: 'Luis Carlos ',
+      Idade: 43,
+      Sexo: 'Masculino',
+      Profissao: 'Analista de Q.A ',
+       Salario: 1450000
+    },
+       {
+      nome: 'Antônio Marcos' ,
+      Idade: 40,
+      Sexo: 'Masculino',
+      Profissao: 'Desenvoledor Full Stack Python ',
+       Salario: 1580000
+    },
+       {
+      nome: 'Adriana Luisa ',
+      Idade: 43,
+      Sexo: 'Masculino',
+      Profissao: 'Desenvoledor Full Stack JavaScript ',
+       Salario: 1590000
+    },
+  ]
 }

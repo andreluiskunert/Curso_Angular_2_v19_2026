@@ -45,19 +45,22 @@
 </span>
 <hr>
 <!-- Quinta-feira,19/03/2026_De noite  -->
+ <!-- Sexta-feira,20/2026_De noite "Revisão" -->
  <h2>Diretivas Estruturais:</h2>
  <h3>1ª Diretiva *ngFor:</h3>
  <table>
     <th>Nome</th>
-    <th>Idade</th>
-    <th>Sexo</th>
-    <th>Profissão</th>
-    <tr>
-      <td>Andre  Luis </td>
-      <td>43</td>
-      <td>Masculino</td>
-       <td>Desenvoledor Full Stack</td>
-    </tr>
+    <th>Idade</th> <br>
+    <th>Sexo</th> <br>
+    <th>Profissão</th> <br>
+    <th>Salario/ano</th>
+       <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.nome}} </td> <br>
+        <td>{{cliente.Idade}} </td> <br>
+        <td>{{cliente.Sexo}} </td> <br>
+        <td>{{cliente.Profissao}} </td>
+        <td> {{cliente.Salario}}</td>
+        </tr>
  </table>
  <hr>
 
