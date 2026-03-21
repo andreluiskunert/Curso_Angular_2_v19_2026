@@ -48,20 +48,29 @@
  <!-- Sexta-feira,20/2026_De noite "Revisão" -->
  <h2>Diretivas Estruturais:</h2>
  <h3>1ª Diretiva *ngFor:</h3>
- <table>
+  <h2>  <table>
     <th>Nome</th>
     <th>Idade</th> <br>
     <th>Sexo</th> <br>
     <th>Profissão</th> <br>
     <th>Salario/ano</th>
        <tr *ngFor="let cliente of clientes">
-        <td>{{cliente.nome}} </td> <br>
+        <td>{{cliente.nome |uppercase }} </td> <br>
         <td>{{cliente.Idade}} </td> <br>
-        <td>{{cliente.Sexo}} </td> <br>
+        <td>{{cliente.Sexo | lowercase}} </td> <br>
         <td>{{cliente.Profissao}} </td>
-        <td> {{cliente.Salario}}</td>
+        <td> {{cliente.Salario |currency}}</td>
         </tr>
- </table>
+ </table> 
+ <br>
+ <span>{{clientes |json}}</span>  
+</h2>
+ 
  <hr>
+ <!-- Sabado_21/03/2026_De tarde -->
+ <h3> Pipes em Angular</h3>
+ <h2>
+  Obs.: usa a tabela de cima...
+ </h2>
 
 <router-outlet></router-outlet>

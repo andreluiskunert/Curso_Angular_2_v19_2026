@@ -69,28 +69,28 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
       Idade: 43,
       Sexo: 'Masculino',
       Profissao: 'Desenvoledor Full Stack Java+AI ',
-      Salario: 1750000
+      Salario: 175000
     },
        {
       nome: 'Luis Carlos ',
       Idade: 43,
       Sexo: 'Masculino',
       Profissao: 'Analista de Q.A ',
-       Salario: 1450000
+       Salario: 145000
     },
        {
       nome: 'Antônio Marcos' ,
       Idade: 40,
       Sexo: 'Masculino',
       Profissao: 'Desenvoledor Full Stack Python ',
-       Salario: 1580000
+       Salario: 158000
     },
        {
       nome: 'Adriana Luisa ',
       Idade: 43,
-      Sexo: 'Masculino',
+      Sexo: 'Feminina',
       Profissao: 'Desenvoledor Full Stack JavaScript ',
-       Salario: 1590000
+       Salario: 159000
     },
   ]
 }
