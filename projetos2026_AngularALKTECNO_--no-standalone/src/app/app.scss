@@ -1,0 +1,29 @@
+.tabela-clientes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tabela-clientes th {
+  background-color: #1e293b; /* azul escuro */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.tabela-clientes td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-clientes tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.tabela-clientes tr:hover {
+  background-color: #cbd5f5;
+  transition: 0.3s;
+}

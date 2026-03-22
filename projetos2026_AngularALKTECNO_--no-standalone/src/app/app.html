@@ -48,23 +48,33 @@
  <!-- Sexta-feira,20/2026_De noite "Revisão" -->
  <h2>Diretivas Estruturais:</h2>
  <h3>1ª Diretiva *ngFor:</h3>
-  <h2>  <table>
-    <th>Nome</th>
-    <th>Idade</th> <br>
-    <th>Sexo</th> <br>
-    <th>Profissão</th> <br>
-    <th>Salario/ano</th>
-       <tr *ngFor="let cliente of clientes">
-        <td>{{cliente.nome |uppercase }} </td> <br>
-        <td>{{cliente.Idade}} </td> <br>
-        <td>{{cliente.Sexo | lowercase}} </td> <br>
-        <td>{{cliente.Profissao}} </td>
-        <td> {{cliente.Salario |currency}}</td>
-        </tr>
- </table> 
- <br>
- <span>{{clientes |json}}</span>  
-</h2>
+<h2>Tabela de Clientes</h2>
+
+<table class="tabela-clientes">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Sexo</th>
+      <th>Profissão</th>
+      <th>Salário/ano</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{ cliente.nome | uppercase }}</td>
+      <td>{{ cliente.Idade }}</td>
+      <td>{{ cliente.Sexo | sexo }}</td>
+      <td>{{ cliente.Profissao }}</td>
+      <td>{{ cliente.Salario | currency }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<span>{{ clientes | json }}</span>
  
  <hr>
  <!-- Sabado_21/03/2026_De tarde -->
@@ -72,5 +82,10 @@
  <h2>
   Obs.: usa a tabela de cima...
  </h2>
-
+ <hr>
+  <!-- Sabado_21/03/2026_De noite -->
+ <h3>Criando Pipes Customizados</h3>
+ <h2>
+  Obs.: usa a tabela de cima...
+ </h2>
 <router-outlet></router-outlet>
