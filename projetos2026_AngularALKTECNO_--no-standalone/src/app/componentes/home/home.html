@@ -1,1 +1,24 @@
-<p>home works!</p>
+<h1>Lista de Clientes</h1>
+
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Sexo</th>
+      <th>Profissão</th>
+      <th>Salário</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{ cliente.nome }}</td>
+      <td>{{ cliente.idade }}</td>
+      <td>{{ cliente.sexo | sexo }}</td>
+      <td>{{ cliente.profissao }}</td>
+      <td>{{ cliente.salario | currency }}</td>
+    </tr>
+  </tbody>
+</table>
+<span>{{ clientes | json }}</span>
+

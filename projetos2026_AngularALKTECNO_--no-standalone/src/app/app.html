@@ -49,34 +49,6 @@
  <h2>Diretivas Estruturais:</h2>
  <h3>1ª Diretiva *ngFor:</h3>
  <app-toolbar></app-toolbar>
-<h2>Tabela de Clientes</h2>
-
-<table class="tabela-clientes">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Idade</th>
-      <th>Sexo</th>
-      <th>Profissão</th>
-      <th>Salário/ano</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr *ngFor="let cliente of clientes">
-      <td>{{ cliente.nome | uppercase }}</td>
-      <td>{{ cliente.Idade }}</td>
-      <td>{{ cliente.Sexo | sexo }}</td>
-      <td>{{ cliente.Profissao }}</td>
-      <td>{{ cliente.Salario | currency }}</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<span>{{ clientes | json }}</span>
- 
  <hr>
  <!-- Sabado_21/03/2026_De tarde -->
  <h3> Pipes em Angular</h3>
@@ -93,5 +65,4 @@
  <h3> Criando novo Componente e Adicionando Navegação</h3>
  <h2> Obs.: Será utilizada a "Tabela de Clientes" que esta acima...</h2>
  <hr>
-
 <router-outlet></router-outlet>

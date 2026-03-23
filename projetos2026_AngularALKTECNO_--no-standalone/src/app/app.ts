@@ -12,13 +12,13 @@ import {
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SexoPipe } from './pipes/sexo-pipe';
+
 import { Toolbar } from './componentes/toolbar/toolbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule, SexoPipe, Toolbar],
+  imports: [RouterOutlet, FormsModule, CommonModule,  Toolbar],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
@@ -65,35 +65,4 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   mudarTexto() {
     this.title += ' 6';
   }
-
-  clientes = [
-    {
-      nome: 'André Luis',
-      Idade: 43,
-      Sexo: 'm',
-      Profissao: 'Desenvolvedor Full Stack Java+AI',
-      Salario: 175000
-    },
-    {
-      nome: 'Luis Carlos',
-      Idade: 43,
-      Sexo: 'm',
-      Profissao: 'Analista de Q.A',
-      Salario: 145000
-    },
-    {
-      nome: 'Antônio Marcos',
-      Idade: 40,
-      Sexo: 'm',
-      Profissao: 'Desenvolvedor Full Stack Python',
-      Salario: 158000
-    },
-    {
-      nome: 'Adriana Luisa',
-      Idade: 43,
-      Sexo: 'f',
-      Profissao: 'Desenvolvedor Full Stack JavaScript',
-      Salario: 159000
-    }
-  ];
-}
+  }
