@@ -12,12 +12,13 @@ import {
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SexoPipe } from "./pipes/sexo-pipe";
+import { SexoPipe } from './pipes/sexo-pipe';
+import { Toolbar } from './componentes/toolbar/toolbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule, SexoPipe],
+  imports: [RouterOutlet, FormsModule, CommonModule, SexoPipe, Toolbar],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
@@ -27,7 +28,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   title = 'Bem vindo ao Treinamento Web com Angular_2026';
   frase = '';
   imgUrl = 'https://miro.medium.com/v2/resize:fit:1400/1*m4iKxbr4ecKNiIZ9zl37Ag@2x.jpeg';
-  work!: '';
+  work = '';
 
   constructor() {
     console.log('Componente no construtor...');
@@ -64,34 +65,35 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy,
   mudarTexto() {
     this.title += ' 6';
   }
-  clientes =[
+
+  clientes = [
     {
-      nome: 'André Luis ',
+      nome: 'André Luis',
       Idade: 43,
       Sexo: 'm',
-      Profissao: 'Desenvoledor Full Stack Java+AI ',
+      Profissao: 'Desenvolvedor Full Stack Java+AI',
       Salario: 175000
     },
-       {
-      nome: 'Luis Carlos ',
+    {
+      nome: 'Luis Carlos',
       Idade: 43,
       Sexo: 'm',
-      Profissao: 'Analista de Q.A ',
-       Salario: 145000
+      Profissao: 'Analista de Q.A',
+      Salario: 145000
     },
-       {
-      nome: 'Antônio Marcos' ,
+    {
+      nome: 'Antônio Marcos',
       Idade: 40,
       Sexo: 'm',
-      Profissao: 'Desenvoledor Full Stack Python ',
-       Salario: 158000
+      Profissao: 'Desenvolvedor Full Stack Python',
+      Salario: 158000
     },
-       {
-      nome: 'Adriana Luisa ',
+    {
+      nome: 'Adriana Luisa',
       Idade: 43,
       Sexo: 'f',
-      Profissao: 'Desenvoledor Full Stack JavaScript ',
-       Salario: 159000
-    },
-  ]
+      Profissao: 'Desenvolvedor Full Stack JavaScript',
+      Salario: 159000
+    }
+  ];
 }
