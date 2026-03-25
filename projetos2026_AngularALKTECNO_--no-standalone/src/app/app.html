@@ -9,7 +9,7 @@
 
 <p>4 tipos de Data Binding:</p>
 <ol>
-  <li>Interpolação → <code>{{ title }}</code></li>
+  <li>Interpolação → <code>{{ '{{ title }}' }}</code></li>
   <li>Property Binding → <img [src]="imgUrl" alt="Imagem Angular" width="300"></li>
   <li>Event Binding → <code>(click)="mudarTexto()"</code></li>
   <li>Two-Way Binding → <code>[(ngModel)]="frase"</code></li>
@@ -23,47 +23,152 @@
 <h2>Diretivas de decisão: *ngIf e *ngSwitch</h2>
 
 <h4>1ª diretiva: *ngIf</h4>
-<h4 *ngIf=" work; else mensagemPadrao">{{  work }}</h4>
+<h4 *ngIf="work; else mensagemPadrao">{{ work }}</h4>
+
 <ng-template #mensagemPadrao>
-  <h3>Estamos Codando em Angular </h3>
+  <h3>Estamos codando em Angular</h3>
 </ng-template>
-<!-- Quarta-feira,18/03/2026_De noite -->
- <h4>2ª Diretiva *ngSwicht:</h4>
-<span [ngSwitch]="title">
-<p *ngSwitchCase="true">
- Esse paragrafo Verdadeiro
-</p>
-<p *ngSwitchCase="false">
- Esse paragrafo Falso
 
+<h4>2ª diretiva: *ngSwitch</h4>
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'Bora codar com Angular_2026'">
+    Esse parágrafo corresponde ao valor do title.
+  </p>
 
-</p>
-<p *ngSwitchDefault>
- Esse paragrafo Default
+  <p *ngSwitchCase="'Angular'">
+    Esse parágrafo aparece quando o title for Angular.
+  </p>
 
-</p>
-</span>
+  <p *ngSwitchDefault>
+    Esse parágrafo é o default.
+  </p>
+</div>
+
 <hr>
-<!-- Quinta-feira,19/03/2026_De noite  -->
- <!-- Sexta-feira,20/2026_De noite "Revisão" -->
- <h2>Diretivas Estruturais:</h2>
- <h3>1ª Diretiva *ngFor:</h3>
- <app-toolbar></app-toolbar>
- <hr>
- <!-- Sabado_21/03/2026_De tarde -->
- <h3> Pipes em Angular</h3>
- <h2>
-  Obs.: usa a tabela de cima...
- </h2>
- <hr>
-  <!-- Sabado_21/03/2026_De noite -->
- <h3>Criando Pipes Customizados</h3>
- <h2>
-  Obs.: usa a tabela de cima...
- </h2>
- <hr>
- <h3> Criando novo Componente e Adicionando Navegação</h3>
- <h2> Obs.: Será utilizada a "Tabela de Clientes" que esta acima...</h2>
- <hr>
- <h1> Módulos em Angular </h1>
+
+<h2>Diretivas Estruturais</h2>
+<h3>1ª diretiva: *ngFor</h3>
+
+<app-toolbar></app-toolbar>
+
+<hr>
+
+<h3>Pipes em Angular</h3>
+<h2>Obs.: usa a tabela de cima...</h2>
+
+<hr>
+
+<h3>Criando Pipes Customizados</h3>
+<h2>Obs.: usa a tabela de cima...</h2>
+
+<hr>
+
+<h3>Criando novo Componente e Adicionando Navegação</h3>
+<h2>Obs.: será utilizada a "Tabela de Clientes" que está acima...</h2>
+
+<hr>
+
+<h1>Módulos em Angular</h1>
+<h1>Resumo da Aula – Angular: Módulos e Lazy Loading</h1>
+
+<p>
+  Nesta aula, foi apresentado como criar o primeiro módulo no Angular utilizando o Angular CLI.
+  O objetivo principal foi organizar melhor a aplicação, separando funcionalidades em módulos específicos.
+</p>
+
+<h2>Criação do módulo</h2>
+<p>
+  Foi utilizado o comando <strong>ng g m</strong> para gerar um módulo.
+  Além disso, foi usada a flag <strong>--routing</strong>, que também cria um arquivo de rotas para esse módulo.
+</p>
+
+<p>Exemplo de comando:</p>
+<pre><code>ng g m features/produto --routing</code></pre>
+
+<p>
+  Com isso, o Angular cria dois arquivos principais:
+</p>
+<ul>
+  <li>O arquivo do módulo</li>
+  <li>O arquivo de rotas do módulo</li>
+</ul>
+
+<h2>Organização por funcionalidade</h2>
+<p>
+  O módulo criado foi o de <strong>produto</strong>, dentro da pasta <strong>features</strong>.
+  Essa abordagem ajuda a organizar melhor a aplicação por funcionalidades.
+</p>
+
+<h2>Criação dos componentes</h2>
+<p>
+  Dentro do módulo de produto, foram criados dois componentes:
+</p>
+<ul>
+  <li>Componente de cadastro</li>
+  <li>Componente de listagem</li>
+</ul>
+
+<p>Exemplo de comandos:</p>
+<pre><code>ng g c features/produto/cadastro
+ng g c features/produto/listagem</code></pre>
+
+<p>
+  Diferente do que acontecia antes, agora esses componentes não ficam diretamente no módulo principal da aplicação,
+  mas sim dentro do módulo da funcionalidade.
+</p>
+
+<h2>Lazy Loading</h2>
+<p>
+  A aula também apresentou o conceito de <strong>Lazy Loading</strong>, que significa carregamento sob demanda.
+  Isso quer dizer que o módulo de produtos só será carregado quando a rota de produtos for acessada.
+</p>
+
+<p>Exemplo:</p>
+<pre><code>&#123;
+  path: 'produto',
+  loadChildren: () =&gt; import('./features/produto/produto.module')
+    .then(m =&gt; m.ProdutoModule)
+&#125;</code></pre>
+
+<p>
+  Essa técnica melhora a organização e também o desempenho da aplicação,
+  pois evita carregar tudo de uma vez logo no início.
+</p>
+
+<h2>Rotas internas do módulo</h2>
+<p>
+  No arquivo de rotas do módulo de produto, foram configuradas rotas internas para:
+</p>
+<ul>
+  <li>Listagem de produtos</li>
+  <li>Cadastro de novo produto</li>
+</ul>
+
+<p>
+  A rota padrão foi definida para abrir primeiro a listagem de produtos.
+</p>
+
+<h2>Resultado da aplicação</h2>
+<p>
+  Ao final, a aplicação passou a ter navegação entre páginas como:
+</p>
+<ul>
+  <li>Home</li>
+  <li>Novo</li>
+  <li>Produtos</li>
+</ul>
+
+<p>
+  Quando o usuário clica em <strong>Produtos</strong>, o Angular carrega o módulo de produto
+  e exibe inicialmente a tela de listagem.
+</p>
+
+<h2>Conclusão</h2>
+<p>
+  A aula mostrou como criar módulos no Angular, organizar a aplicação por funcionalidades,
+  gerar componentes dentro desses módulos e configurar o Lazy Loading para carregar recursos apenas quando necessário.
+</p>
+
+<hr>
+
 <router-outlet></router-outlet>
