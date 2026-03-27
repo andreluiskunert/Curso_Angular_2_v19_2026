@@ -12,13 +12,14 @@ import {
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { Toolbar } from './componentes/toolbar/toolbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule,  Toolbar],
+  imports: [RouterOutlet, FormsModule, CommonModule,  Toolbar, MatToolbarModule],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })

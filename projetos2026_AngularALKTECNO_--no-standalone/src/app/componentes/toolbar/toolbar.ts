@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-toolbar',
-  imports: [RouterLink, RouterLinkActive],
+  standalone: true,
+  imports: [MatToolbarModule, MatButtonModule],
   templateUrl: './toolbar.html',
-  styleUrl: './toolbar.scss',
+  styleUrls: ['./toolbar.scss']
 })
-export class Toolbar {}
+export class Toolbar {
+
+}

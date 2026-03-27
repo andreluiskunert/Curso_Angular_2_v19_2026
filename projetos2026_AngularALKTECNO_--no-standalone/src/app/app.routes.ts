@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Home } from './componentes/home/home';
 import { Novo } from './componentes/novo/novo';
+// import {MatToolbarModule} from '@angular/material/toolbar';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
