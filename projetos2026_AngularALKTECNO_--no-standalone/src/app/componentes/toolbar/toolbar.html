@@ -7,16 +7,16 @@
 
     </div>
     <marquee> Aqui teremos menu de navegação com Toolbar  </marquee>
-
-<mat-toolbar><span>My App</span></mat-toolbar>
-<mat-toolbar>
-  <mat-toolbar-row><span>Row 1</span></mat-toolbar-row>
-  <mat-toolbar-row><span>Row 2</span>
-    <button matButton>
-      Button 1
-    </button>
-    <button matButton>
-      Button 2
-    </button>
-  </mat-toolbar-row>
+<mat-toolbar color="primary">
+  <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Projeto 1</span>
+  <span class="example-spacer"></span>
+  <button matIconButton class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
 </mat-toolbar>
