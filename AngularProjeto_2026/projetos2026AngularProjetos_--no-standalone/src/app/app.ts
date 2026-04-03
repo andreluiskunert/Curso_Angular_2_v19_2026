@@ -1,4 +1,4 @@
-import { Component, DoCheck, OnChanges, OnInit, signal, SimpleChanges } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, signal, SimpleChanges } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,11 +7,24 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit, OnChanges, DoCheck  {
+export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentChecked, AfterContentInit, AfterViewInit {
 
   title = 'Projeto01';
   constructor(){
     console.log('componente construtor')
+  }
+  ngAfterViewInit(): void {
+    console.log('Aqui tem componente AfterViewInit');
+  }
+  ngAfterContentInit(): void {
+    console.log('Aqui tem componente AfterContentInit');
+  }
+
+  ngAfterContentChecked(): void {
+    console.log('Aqui tem componente AfterContentChecked');
+  }
+  ngOnDestroy(): void {
+    console.log('Componente destruído');
   }
   ngDoCheck(): void {
     console.log('Aqui tem componente DoCheck');
