@@ -11,6 +11,8 @@
  <h2> Tipos de data bindings</h2>
  <p><img [src]="imgUrl"></p> 
  <h4>{{frase}}</h4>
+ <button (click)="chamarFuncao()">Chamar Evento</button>
+ 
    <h3>
 
   <p>
@@ -29,5 +31,7 @@
     Por fim, o <strong>two-way data binding</strong> combina entrada e saída de dados simultaneamente, utilizando <code>[(ngModel)]</code>. Com isso, qualquer alteração no input do usuário é refletida automaticamente na variável do componente e vice-versa. Para funcionar corretamente, é necessário importar o módulo de formulários do Angular. Esse tipo de binding é muito utilizado em formulários e aplicações que exigem atualização em tempo real.
   </p>
    </h3>
+   <input [(ngModel)] = "frase" >
+   <hr>
 
 <router-outlet/>
