@@ -6,6 +6,28 @@
    <button (click) = "mudartexto()">Mudar Texto</button>
      <marquee> Aqui mundarei o projeto Angular2026</marquee>
      <!-- Sexta-feira,03/04/2026_De noite  -->
+<!-- Sabádo,05/03/2026_De Manhã -->
+ <hr>
+ <h2> Tipos de data bindings</h2>
+ <p><img [src]="imgUrl"></p> 
+ <h4>{{frase}}</h4>
+   <h3>
 
-   
+  <p>
+    Nesta aula, foi apresentado o conceito de <strong>Data Binding</strong> no Angular, que representa a forma como os dados são conectados entre o componente (TypeScript) e o template (HTML). Esse mecanismo permite exibir informações na tela e também capturar ações do usuário, tornando a aplicação dinâmica e interativa. O Angular possui quatro tipos principais de data binding, cada um com uma finalidade específica dentro do desenvolvimento de interfaces.
+  </p>
+
+  <p>
+    O primeiro tipo é a <strong>interpolação</strong>, que utiliza chaves duplas <code>{{frase}}</code> para exibir valores de variáveis diretamente no HTML. Já o <strong>property binding</strong> permite passar dados do componente para propriedades de elementos HTML, como no caso de imagens usando o atributo <code>src</code>. Esses dois tipos são fundamentais para apresentar dados de forma dinâmica na interface do usuário.
+  </p>
+
+  <p>
+    O terceiro tipo é o <strong>event binding</strong>, que possibilita capturar eventos do usuário, como cliques e teclas pressionadas, executando funções definidas no componente. Ele utiliza parênteses, como <code>(click)</code>. Esse recurso é essencial para tornar a aplicação interativa, permitindo respostas imediatas às ações do usuário.
+  </p>
+
+  <p>
+    Por fim, o <strong>two-way data binding</strong> combina entrada e saída de dados simultaneamente, utilizando <code>[(ngModel)]</code>. Com isso, qualquer alteração no input do usuário é refletida automaticamente na variável do componente e vice-versa. Para funcionar corretamente, é necessário importar o módulo de formulários do Angular. Esse tipo de binding é muito utilizado em formulários e aplicações que exigem atualização em tempo real.
+  </p>
+   </h3>
+
 <router-outlet/>

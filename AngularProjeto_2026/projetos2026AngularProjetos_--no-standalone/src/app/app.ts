@@ -10,6 +10,8 @@ import { RouterOutlet } from '@angular/router';
 export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentChecked, AfterContentInit, AfterViewInit {
 
   title = 'Projeto01';
+  frase = "Bora Lá Codar";
+  imgUrl ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXp1flh-OGNg9PE2jrCKDgz4MylF8BZ5TmXA&s";
   constructor(){
     console.log('componente construtor')
   }
@@ -30,7 +32,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentC
     console.log('Aqui tem componente DoCheck');
   }
    mudartexto(){
-    this.title += 'Estudar Angular';
+    this.title += '1';
    }
   ngOnChanges(changes: SimpleChanges): void {
     console.log('Aqui tem componente OnChanges', changes);
@@ -39,5 +41,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentC
   ngOnInit(): void {
     console.log('Aqui tem componente OnInit');
   }
-
+  // 4 Tipos de data binding:
+  //  1ª Interpolação {{frase}};
+  //  2ª Property Bind <img [src=]"imgUrl">
 }
