@@ -33,5 +33,22 @@
    </h3>
    <input [(ngModel)] = "frase" >
    <hr>
-
+ <h2> Diretivas de decisão *ngIf *ngSwitch:</h2>
+ <!-- Sabádo,04/04/2026_De noite -->
+ <h4 *ngIf="frase01; else mensagemPadrao">{{frase01}}</h4>
+ <ng-template #mensagemPadrao>
+  <h1>Estamos codando com Angular </h1>
+ </ng-template>
+ <span [ngSwitch]="frase02">
+ <p *ngSwitchCase="true">
+  Esse paragrafo verdadeiro 
+ </p>
+ <p *ngSwitchCase="false">
+  Esse paragrafo falso
+ </p>
+ <p *ngSwitchDefault>
+  Esse paragrafo default
+ </p>
+ </span>
+ <hr>
 <router-outlet/>
