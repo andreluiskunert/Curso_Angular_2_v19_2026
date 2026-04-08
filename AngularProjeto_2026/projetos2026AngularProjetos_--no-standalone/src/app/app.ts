@@ -58,4 +58,9 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentC
 //  Diretivas de decisão *ngIf *ngSwitch: Sabádo,04/04/2026_De noite 
 // 1ª ngIf: utilizado pra complemento else,utilizamos pra exibir ou esconder elementos tomando decisões lógicas...
 // 2ª ngSwitch: Comparação lógica na variavies 
+// ---+---+-----
+//  terça-feira,07/04/2026
+//  Diretivas Estruturais:
+//  ngFor
+
 }
