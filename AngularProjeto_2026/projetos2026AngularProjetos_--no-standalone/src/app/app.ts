@@ -1,11 +1,11 @@
-import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf } from '@angular/common';
 import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, signal, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault],
+  imports: [RouterOutlet, FormsModule, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
@@ -62,5 +62,41 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentC
 //  terça-feira,07/04/2026
 //  Diretivas Estruturais:
 //  ngFor
+// ---------//------------
+// Quinta-feira, 09/04/2026_De noite
+clientes =[
+  {
+    nome:'Andrerson Luis',
+    idade: 48,
+    profissao: 'Engenheiro de Software',
+    sexo: 'm',
+    salario: 25600000,
+
+  },
+    {
+    nome:'Ana Luisa',
+    idade: 46,
+    profissao: 'Analista de Sistemas',
+    sexo: 'f',
+    salario:21500000,
+
+  },
+    {
+    nome:'Luana Marques',
+    idade: 46,
+    profissao: 'Web Designer',
+    sexo: 'f',
+    salario:12500000,
+
+  },
+    {
+    nome:'André Luis',
+    idade: 46,
+    profissao: 'Dev Full Stack Java',
+    sexo: 'm',
+    salario:15600000,
+
+  },
+]
 
 }
