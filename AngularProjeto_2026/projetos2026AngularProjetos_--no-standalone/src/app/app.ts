@@ -1,11 +1,14 @@
-import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf } from '@angular/common';
+import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf, UpperCasePipe, LowerCasePipe, JsonPipe,  CurrencyPipe } from '@angular/common';
 import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, signal, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf],
+  standalone: true,
+  imports: [RouterOutlet, FormsModule, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgForOf, UpperCasePipe, LowerCasePipe,JsonPipe,  CurrencyPipe
+  
+  ],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
@@ -70,7 +73,7 @@ clientes =[
     idade: 48,
     profissao: 'Engenheiro de Software',
     sexo: 'm',
-    salario: 25600000,
+    salario: 256000,
 
   },
     {
@@ -78,7 +81,7 @@ clientes =[
     idade: 46,
     profissao: 'Analista de Sistemas',
     sexo: 'f',
-    salario:21500000,
+    salario:215000,
 
   },
     {
@@ -86,7 +89,7 @@ clientes =[
     idade: 46,
     profissao: 'Web Designer',
     sexo: 'f',
-    salario:12500000,
+    salario:125000,
 
   },
     {
@@ -94,7 +97,7 @@ clientes =[
     idade: 46,
     profissao: 'Dev Full Stack Java',
     sexo: 'm',
-    salario:15600000,
+    salario:156000,
 
   },
 ]

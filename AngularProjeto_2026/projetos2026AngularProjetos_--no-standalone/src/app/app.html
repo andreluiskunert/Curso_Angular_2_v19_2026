@@ -52,21 +52,24 @@
  </span>
  <hr>
  <h2>   Diretivas Estruturais:ngFor</h2>
- <table>
+   <h3>fixa de cadastro  </h3>
+ <table> 
     <th>Nome</th>
     <th>Idade</th>
     <th>Profssao</th>
     <th>Sexo</th>
     <th>Salario</th>
-   <tr *ngFor="let cliente of clientes" | keyvalue>
-      <td>{{cliente.nome}}</td>
+   <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.nome | uppercase}}</td>
       <td>{{cliente.idade}}</td>
       <td>{{cliente.profissao}}</td>
-      <td>{{cliente.sexo}}</td>
-      <td>{{cliente.salario}}</td>
+      <td>{{cliente.sexo | lowercase}}</td>
+      <td>{{cliente.salario | currency: 'BRL'}}</td>
    </tr>
-     
-
  </table>
+ <hr>
+ <h2> Pipes em Angular</h2>
+ <h3> Usar a tabela acima </h3>
+ <span>{{clientes | json }}</span>
 <router-outlet/>
  
