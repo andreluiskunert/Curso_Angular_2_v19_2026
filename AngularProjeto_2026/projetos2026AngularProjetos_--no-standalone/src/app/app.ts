@@ -54,37 +54,7 @@ export class App implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentC
   frase02 = 'codando...';
   imgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXp1flh-OGNg9PE2jrCKDgz4MylF8BZ5TmXA&s";
 
-  clientes = [
-    {
-      nome:'Andrerson Luis',
-      idade: 48,
-      profissao: 'Engenheiro de Software',
-      sexo: 'm',
-      salario: 256000,
-    },
-    {
-      nome:'Ana Luisa',
-      idade: 46,
-      profissao: 'Analista de Sistemas',
-      sexo: 'f',
-      salario:215000,
-    },
-    {
-      nome:'Luana Marques',
-      idade: 46,
-      profissao: 'Web Designer',
-      sexo: 'f',
-      salario:125000,
-    },
-    {
-      nome:'André Luis',
-      idade: 46,
-      profissao: 'Dev Full Stack Java',
-      sexo: 'm',
-      salario:156000,
-    },
-  ];
-
+  
   chamarFuncao() {
     console.log("Esse é um click...");
   }
